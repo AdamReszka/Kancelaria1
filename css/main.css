@@ -55,14 +55,10 @@ body {
 
 #sec1-main-cont {
   width: 100%;
-  background-color: #000;
-  background-image: url("../images/notes.jpg");
-  background-size: cover;
-  background-position: bottom; }
+  background: rgba(0, 0, 0, 0.5); }
   #sec1-main-cont .main-cover {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
     position: relative; }
   #sec1-main-cont nav {
     width: 100%;

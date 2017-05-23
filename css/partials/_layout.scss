@@ -8,14 +8,14 @@ body{
 }
 #sec1-main-cont{
   width: 100%;
-  background-color: #000;
-  background-image: url('../images/notes.jpg');
-  background-size: cover;
-  background-position: bottom;
+  background: rgba(0, 0, 0, 0.5);
+  // background-image: url('../images/notes2.jpg');
+  // background-size: cover;
+  // background-position: bottom;
   .main-cover{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    // background-color: rgba(0, 0, 0, 0.5);
     position: relative;
   }
   nav{
