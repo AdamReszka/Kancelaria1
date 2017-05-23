@@ -55,20 +55,28 @@ body {
 
 #sec1-main-cont {
   width: 100%;
-  background-color: #000; }
+  background-color: #000;
+  background-image: url("../images/notes.jpg");
+  background-size: cover;
+  background-position: bottom; }
+  #sec1-main-cont .main-cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative; }
   #sec1-main-cont nav {
     width: 100%;
-    height: 5rem;
+    height: 7rem;
     position: relative; }
     #sec1-main-cont nav .main-ul {
       font-family: "Varela Round", sans-serif;
       display: flex;
       flex-direction: row;
-      margin: 0;
+      margin: 0 0 0 6rem;
       padding: 0;
-      height: 5rem; }
+      height: 7rem; }
       #sec1-main-cont nav .main-ul li {
-        height: 5rem;
+        height: 7rem;
         display: flex; }
         #sec1-main-cont nav .main-ul li a {
           text-decoration: none;
@@ -77,13 +85,63 @@ body {
           color: #fff;
           display: flex;
           align-items: center;
+          flex-direction: column;
           padding: 0 2rem 0 2rem; }
+          #sec1-main-cont nav .main-ul li a:hover p.underline {
+            width: 100%; }
           #sec1-main-cont nav .main-ul li a p {
             margin: 0;
             padding: 0;
             font-size: 1.4rem;
             text-transform: uppercase;
-            font-weight: 600; }
+            margin-top: 2.9rem;
+            font-weight: 500; }
+          #sec1-main-cont nav .main-ul li a p.underline {
+            display: block;
+            text-align: center;
+            height: 0.2rem;
+            width: 0;
+            background-color: #fff;
+            transition: 0.3s;
+            margin-top: 0.7rem; }
+  #sec1-main-cont .title-cont {
+    width: 46vw;
+    height: 40rem;
+    margin: 20vh 0 0 8rem; }
+    #sec1-main-cont .title-cont .top-title {
+      font-family: "Raleway", sans-serif;
+      font-size: 9rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 2rem; }
+    #sec1-main-cont .title-cont .sub-title {
+      font-family: "Raleway", sans-serif;
+      font-size: 2.4rem;
+      font-weight: 300;
+      color: #dedede;
+      margin-bottom: 3.6rem; }
+    #sec1-main-cont .title-cont .main-button {
+      width: 16rem;
+      height: 3.6rem; }
+      #sec1-main-cont .title-cont .main-button a {
+        display: flex;
+        text-decoration: none;
+        width: 16rem;
+        height: 3.6rem;
+        color: #fff;
+        background-color: #b14d23;
+        transition: 0.2s; }
+        #sec1-main-cont .title-cont .main-button a:hover {
+          background-color: #F9A03F; }
+        #sec1-main-cont .title-cont .main-button a p {
+          margin: auto;
+          padding: 0;
+          text-transform: uppercase;
+          font-family: "Varela Round", sans-serif;
+          font-size: 1.6rem; }
 
 #sec2-work-specify {
   width: 100%;
