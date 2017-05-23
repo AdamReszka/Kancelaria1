@@ -1,0 +1,38 @@
+@mixin centering {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@mixin zero {
+	margin: 0;
+	padding: 0;
+}
+@mixin lrauto {
+	margin-left: auto;
+	margin-right: auto;
+}
+@mixin clearFix{
+	&:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+@mixin clearA {
+	text-decoration: none;
+	outline: none;
+}
+@mixin dircol {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+@mixin dirrow {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+@mixin parentSize {
+  width: inherit;
+  height: inherit;
+}
