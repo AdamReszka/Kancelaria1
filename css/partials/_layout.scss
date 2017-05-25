@@ -42,7 +42,7 @@ body{
           flex-direction: column;
           padding: 0 2rem 0 2rem;
           &:hover{
-            p.underline{
+            div.underline{
               width: 100%;
             }
           }
@@ -54,7 +54,7 @@ body{
             font-weight: 500;
 
           }
-          p.underline{
+          div.underline{
               display: block;
               text-align: center;
               height: 0.2rem;
@@ -113,7 +113,79 @@ body{
     }
   }
 }
+.pauseline{
+  height: 0.5rem;
+  width: 10rem;
+  background-color: #b14d23;
+}
 #sec2-work-specify{
   width: 100%;
-  height: 40rem;
+  min-height: 46rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eeeeee;
+  .sec-header{
+    font-family: $way;
+    font-weight: 700;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 8rem 0 4rem 0;
+  }
+  .offer-desc{
+    font-family: $way;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: #282828;
+    margin: 4rem 0 4rem 0;
+    max-width: 120rem;
+  }
+  .offer-box{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0 4rem 0;
+    .ob-item{
+      width: 32rem;
+      height: 26rem;
+      margin: 1rem;
+      background-color: #fff;
+      a{
+        width: 32rem;
+        height: 26rem;
+        display: flex;
+        flex-direction: column;
+        color: #000;
+        text-decoration: none;
+        padding: 3rem;
+        &:hover{
+          div.underline{
+            width: 100%;
+          }
+        }
+        .ob-title{
+          text-transform: uppercase;
+          font-size: 2.2rem;
+          font-family: $way;
+          font-weight: 700;
+          position: relative;
+
+          div.underline{
+              display: block;
+              text-align: center;
+              height: 0.2rem;
+              width: 0;
+              background-color: #b14d23;
+              transition: 0.3s;
+              margin-top: 0.7rem;
+            }
+        }
+        .ob-desc{
+
+        }
+        .ob-button{
+
+        }
+      }
+    }
+  }
 }
