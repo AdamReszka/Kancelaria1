@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="js\jquery-3.1.1.min.js"></script>
   <script src="js\parallax.js"></script>
+  <script src="js\jquery.countTo.js"></script>
   <script src="js\main.js"></script>
   <title>Kancelaria</title>
+  <link rel="stylesheet" href="css\font-awesome-4.7.0\css\font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
@@ -81,7 +83,7 @@
       w czym możemy ci pomóc?
     </p>
     <div class="pauseline"></div>
-    <p class="offer-desc">
+    <p class="header-desc">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, neque, aspernatur. Doloribus doloremque tempora qui quaerat alias laboriosam placeat modi, quasi ut est, provident temporibus voluptate quo quis et debitis.
     </p>
     <div class="offer-box">
@@ -166,12 +168,235 @@
           <p class="about-desc">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptate non doloremque maiores beatae, iste, quidem impedit, porro voluptas architecto est quod velit obcaecati veritatis ea at delectus earum harum? Maiores deleniti a, laudantium ipsam, aliquam velit dolorem minima! Expedita temporibus, ab, accusamus eius quos itaque! Odio cum inventore ipsum quod consequuntur delectus aliquid, itaque nobis. Illo amet rerum labore!
           </p>
+          <div class="about-point">
+            <div class="ap-img">
+              <i class="fa fa-diamond" aria-hidden="true"></i>
+            </div>
+            <div class="ap-desc">
+              <div class="ap-desc-title">
+                <p>
+                  profesjonalne wsparcie
+                </p>
+              </div>
+              <div class="ap-desc-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Possimus deserunt dignissimos iste dolores at facilis dolorem,
+                  nesciunt, atque, fugit odio, facere dolorum natus inventore!
+                  Fuga quidem, ducimus ut eligendi alias.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Possimus deserunt dignissimos iste dolores at facilis dolorem,
+                  nesciunt, atque, fugit odio, facere dolorum natus inventore!
+                  Fuga quidem, ducimus ut eligendi alias.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-point">
+            <div class="ap-img">
+              <i class="fa fa-diamond" aria-hidden="true"></i>
+            </div>
+            <div class="ap-desc">
+              <div class="ap-desc-title">
+                <p>
+                  gwarancja skuteczności
+                </p>
+              </div>
+              <div class="ap-desc-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Possimus deserunt dignissimos iste dolores at facilis dolorem,
+                  nesciunt, atque, fugit odio, facere dolorum natus inventore!
+                  Fuga quidem, ducimus ut eligendi alias.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Possimus deserunt dignissimos iste dolores at facilis dolorem,
+                  nesciunt, atque, fugit odio, facere dolorum natus inventore!
+                  Fuga quidem, ducimus ut eligendi alias.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="about-photo">
 
         </div>
       </div>
     </div>
+  </div>
+  <div id="sec4-numbers">
+    <div class="number-cont">
+      <div class="number-item">
+        <div class="item-inside">
+          <p class="big-num" id="projects"><span class="timer" data-from="0" data-to="42"
+      data-speed="2000" data-refresh-interval="10"></span></p>
+          <div class="inside-desc" id="numbersPosition">
+            <p class="inside-desc-title">
+              happy client
+            </p>
+            <p class="inside-desc-sub">
+              Lorem ipsum dolor
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="number-item">
+        <div class="item-inside">
+          <p class="big-num" id="winner">
+            <span class="timer" data-from="0" data-to="15"
+      data-speed="2000" data-refresh-interval="30"></span>
+          </p>
+          <div class="inside-desc">
+            <p class="inside-desc-title">
+              award winner
+            </p>
+            <p class="inside-desc-sub">
+              Lorem ipsum dolor
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="number-item">
+        <div class="item-inside">
+          <p class="big-num" id="coffee">
+            <span class="timer" data-from="0" data-to="99"
+      data-speed="2000" data-refresh-interval="30"></span>
+          </p>
+          <div class="inside-desc">
+            <p class="inside-desc-title">
+              cup of coffee
+            </p>
+            <p class="inside-desc-sub">
+              Lorem ipsum dolor
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="number-item">
+        <div class="item-inside">
+          <p class="big-num" id="members">
+            <span class="timer" data-from="0" data-to="24"
+      data-speed="2000" data-refresh-interval="30"></span>
+          </p>
+          <div class="inside-desc">
+            <p class="inside-desc-title">
+              members
+            </p>
+            <p class="inside-desc-sub">
+              Lorem ipsum dolor
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="sec5-customers">
+    <p class="sec-header">
+      klienci o nas
+    </p>
+    <div class="pauseline"></div>
+    <p class="header-desc">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, neque, aspernatur. Doloribus doloremque tempora qui quaerat alias laboriosam placeat modi, quasi ut est, provident temporibus voluptate quo quis et debitis.
+    </p>
+    <div class="customers-slider-box">
+      <div id="previous-slide" class="move-slider">
+        <i class="fa fa-chevron-left ps-arrow" aria-hidden="true"></i>
+      </div>
+      <div class="customers-slider">
+        <ul>
+          <li id="slide1">
+            <div class="quote-logo">
+              <i class="fa fa-quote-left" aria-hidden="true"></i>
+            </div>
+            <q class="quote-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aut ipsum impedit eveniet velit nulla rerum consequuntur
+              excepturi nesciunt, magnam libero neque recusandae,
+              eaque exercitationem repudiandae deserunt voluptatum
+              voluptatibus minus. Suscipit. Delectus quia facilis distinctio,
+              tempore pariatur explicabo ex? Sequi eaque, consequatur ad
+              possimus impedit! Dolorum eaque velit optio laudantium sed
+              ipsum quas excepturi at, saepe molestias harum amet. Ab, voluptas.
+            </q>
+            <p class="quote-author">
+              Jan Kowalski
+            </p>
+            <p class="quote-author-enterprise">
+              prezes zarządu Websites Polska S.A.
+            </p>
+          </li>
+          <li id="slide2">
+            <div class="quote-logo">
+              <i class="fa fa-quote-left" aria-hidden="true"></i>
+            </div>
+            <q class="quote-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aut ipsum impedit eveniet velit nulla rerum consequuntur
+              excepturi nesciunt, magnam libero neque recusandae,
+              eaque exercitationem repudiandae deserunt voluptatum
+              voluptatibus minus. Suscipit. Delectus quia facilis distinctio,
+              tempore pariatur explicabo ex? Sequi eaque, consequatur ad
+              possimus impedit! Dolorum eaque velit optio laudantium sed
+              ipsum quas excepturi at, saepe molestias harum amet. Ab, voluptas.
+            </q>
+            <p class="quote-author">
+              Jan Kowalski
+            </p>
+            <p class="quote-author-enterprise">
+              prezes zarządu Websites Polska S.A.
+            </p>
+          </li>
+          <li id="slide3">
+            <div class="quote-logo">
+              <i class="fa fa-quote-left" aria-hidden="true"></i>
+            </div>
+            <q class="quote-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aut ipsum impedit eveniet velit nulla rerum consequuntur
+              excepturi nesciunt, magnam libero neque recusandae,
+              eaque exercitationem repudiandae deserunt voluptatum
+              voluptatibus minus. Suscipit. Delectus quia facilis distinctio,
+              tempore pariatur explicabo ex? Sequi eaque, consequatur ad
+              possimus impedit! Dolorum eaque velit optio laudantium sed
+              ipsum quas excepturi at, saepe molestias harum amet. Ab, voluptas.
+            </q>
+            <p class="quote-author">
+              Jan Kowalski
+            </p>
+            <p class="quote-author-enterprise">
+              prezes zarządu Websites Polska S.A.
+            </p>
+          </li>
+          <li id="slide4">
+            <div class="quote-logo">
+              <i class="fa fa-quote-left" aria-hidden="true"></i>
+            </div>
+            <q class="quote-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aut ipsum impedit eveniet velit nulla rerum consequuntur
+              excepturi nesciunt, magnam libero neque recusandae,
+              eaque exercitationem repudiandae deserunt voluptatum
+              voluptatibus minus. Suscipit. Delectus quia facilis distinctio,
+              tempore pariatur explicabo ex? Sequi eaque, consequatur ad
+              possimus impedit! Dolorum eaque velit optio laudantium sed
+              ipsum quas excepturi at, saepe molestias harum amet. Ab, voluptas.
+            </q>
+            <p class="quote-author">
+              Jan Kowalski
+            </p>
+            <p class="quote-author-enterprise">
+              prezes zarządu Websites Polska S.A.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div id="next-slide" class="move-slider">
+        <i class="fa fa-chevron-right ps-arrow" aria-hidden="true"></i>
+      </div>
+    </div>
+
+  </div>
+  <div id="sec6-enterprises">
+    
   </div>
 </body>
 </html>

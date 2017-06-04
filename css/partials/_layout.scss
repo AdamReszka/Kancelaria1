@@ -70,7 +70,7 @@ body{
   .title-cont{
     width: 46vw;
     height: 40rem;
-    margin: 20vh 0 0 8rem;
+    margin: 22vh 0 0 8rem;
     .top-title{
       font-family: $way;
       font-size: 9rem;
@@ -118,6 +118,21 @@ body{
   width: 10rem;
   background-color: $button;
 }
+.sec-header{
+  font-family: $way;
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 8rem 0 4rem 0;
+}
+.header-desc{
+  font-family: $way;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #282828;
+  margin: 4rem 0 4rem 0;
+  max-width: 120rem;
+}
 #sec2-work-specify{
   width: 100%;
   min-height: 46rem;
@@ -125,21 +140,6 @@ body{
   flex-direction: column;
   align-items: center;
   background-color: #eeeeee;
-  .sec-header{
-    font-family: $way;
-    font-weight: 700;
-    font-size: 4rem;
-    text-transform: uppercase;
-    margin: 8rem 0 4rem 0;
-  }
-  .offer-desc{
-    font-family: $way;
-    font-size: 2.4rem;
-    font-weight: 300;
-    color: #282828;
-    margin: 4rem 0 4rem 0;
-    max-width: 120rem;
-  }
   .offer-box{
     display: flex;
     flex-direction: row;
@@ -156,6 +156,9 @@ body{
       text-decoration: none;
       box-sizing: border-box;
       padding: 3rem;
+      -webkit-box-shadow: 1px 12px 15px -11px rgba(0,0,0,0.51);
+      -moz-box-shadow: 1px 12px 15px -11px rgba(0,0,0,0.51);
+      box-shadow: 1px 12px 15px -11px rgba(0,0,0,0.51);
       div.underline{
           display: block;
           text-align: center;
@@ -275,6 +278,48 @@ body{
           display: flex;
           flex-wrap: wrap;
         }
+        .about-point{
+          display: flex;
+          flex-direction: row;
+          margin: 2.4rem 0 0 4rem;
+          .ap-img{
+            color: $hover;
+            .fa-diamond{
+              font-size: 5rem;
+            }
+          }
+          .ap-desc{
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 0 1.6rem;
+            .ap-desc-title{
+              text-transform: uppercase;
+              font-size: 2.2rem;
+              font-family: $way;
+              font-weight: 700;
+              position: relative;
+              p{
+                margin: 0;
+                padding: 0;
+              }
+            }
+            .ap-desc-content{
+              font-size: 1.4rem;
+              font-family: $varela;
+              font-weight: 100;
+              color: #282828;
+              position: relative;
+              margin: 1rem 0;
+              display: flex;
+              flex-wrap: wrap;
+              width: 53rem;
+              p{
+                margin: 0;
+                padding: 0;
+              }
+            }
+          }
+        }
       }
       .about-photo{
         width: 50rem;
@@ -287,4 +332,174 @@ body{
 
     }
   }
+}
+#sec4-numbers{
+  width: 100%;
+  height: 20rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  -webkit-box-shadow: 1px 12px 15px -11px rgba(0,0,0,0.51);
+  -moz-box-shadow: 1px 12px 15px -11px rgba(0,0,0,0.51);
+  box-shadow: 1px 12px 15px -11px rgba(0,0,0,0.51);
+  .number-cont{
+    padding: 0;
+    margin: 0 auto;
+    height: 20rem;
+
+    display: flex;
+    flex-direction: row;
+    .number-item{
+      display: flex;
+      height: 20rem;
+      margin: 0;
+      width: 30rem;
+      border-right: 1px solid #e7e7e7;
+      &:first-child{
+        border-left: 1px solid #e7e7e7;
+      }
+      .item-inside{
+        margin: 6rem 0 6rem 1.2rem;
+        width: 30rem;
+        padding-top: 0.4rem;
+        display: flex;
+        flex-direction: row;
+        font-family: $way;
+        color: #fff;
+        .big-num{
+          font-family: $way;
+          font-size: 6rem;
+          font-weight: 600;
+          width: 8rem;
+          text-align: center;
+          color: $hover;
+        }
+        .inside-desc{
+          display: flex;
+          flex-direction: column;
+          .inside-desc-title{
+            text-transform: uppercase;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 1.5rem 1rem 1rem 1rem;
+            color: #000;
+          }
+          .inside-desc-sub{
+            font-size: 1.4rem;
+            font-family: $varela;
+            font-weight: 100;
+            color: #282828;
+            margin: 0 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+#sec5-customers{
+  width: 100%;
+  height: 73rem;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .customers-slider{
+    height: 40rem;
+    margin: 5rem 0 0 0;
+    overflow: hidden;
+    align-items: center;
+    ul{
+      position: relative;
+      display: block;
+      height: 40rem;
+      li{
+        display: block;
+        width: 120rem;
+        height: 40rem;
+        float: left;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .quote-logo{
+          .fa-quote-left{
+            color: $hover;
+            font-size: 5rem;
+          }
+        }
+        .quote-desc{
+          font-family: $way;
+          font-size: 2rem;
+          font-weight: 300;
+          color: #282828;
+          margin: 4rem 0 4rem 0;
+          max-width: 120rem;
+          text-align: center;
+          font-style: italic;
+          line-height: 2.4rem;
+        }
+        .quote-author{
+          font-family: $way;
+          font-size: 2.8rem;
+          font-weight: 600;
+        }
+        .quote-author-enterprise{
+          font-family: $way;
+          color: #282828;
+          font-size: 2rem;
+          font-weight: 300;
+          margin: 1rem 0 0 0;
+        }
+      }
+      // #slide1{
+      //   background-color: yellow;
+      // }
+      // #slide2{
+      //   background-color: black;
+      // }
+      // #slide3{
+      //   background-color: red;
+      // }
+      // #slide4{
+      //   background-color: violet;
+      // }
+    }
+
+  }
+  .move-slider{
+    width: 6.4rem;
+    height: 6.4rem;
+    background-color: #fff;
+    margin: 0 5rem;
+    display: flex;
+    .ps-arrow{
+      color: $hover;
+      font-size: 4rem;
+      transition: 0.4s;
+    }
+    .fa-chevron-right{
+      margin: auto 0 auto 1.9rem;
+    }
+    .fa-chevron-left{
+      margin: auto 0 auto 1.5rem;
+    }
+    &:hover{
+      cursor: pointer;
+      background-color: $hover;
+      .ps-arrow{
+        color: #fff;
+      }
+    }
+  }
+  .customers-slider-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+#sec6-enterprises{
+  width: 100%;
+  height: 20rem;
+  background-color: $hover;
 }
