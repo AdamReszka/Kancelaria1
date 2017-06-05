@@ -1,24 +1,18 @@
 $(document).ready(initAll);
-
+  $(window).stellar();
 function initAll(){
 
   var timer1 = 0;
 
   setHeight();
-  startParallax();
   setNumbers();
   startSlider();
-
-
+  startParallax();
 
 }
 
 function setHeight(){
   $('#sec1-main-cont').height($(window).innerHeight());
-}
-
-function startParallax() {
-  $('#sec1-main-cont').parallax({imageSrc: '../images/notes2.jpg'});
 }
 
 function setNumbers() {
@@ -32,6 +26,10 @@ function setNumbers() {
       $('.timer').countTo();
     }
   });
+}
+
+function startParallax(){
+  $(window).stellar();
 }
 
 function startSlider() {

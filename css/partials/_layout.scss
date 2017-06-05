@@ -9,13 +9,13 @@ body{
 #sec1-main-cont{
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
-  // background-image: url('../images/notes2.jpg');
-  // background-size: cover;
-  // background-position: bottom;
+  background-image: url('../images/notes2.jpg');
+  background-size: cover;
+  position: relative;
   .main-cover{
     width: 100%;
     height: 100%;
-    // background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     position: relative;
   }
   nav{
@@ -54,15 +54,7 @@ body{
             font-weight: 500;
 
           }
-          div.underline{
-              display: block;
-              text-align: center;
-              height: 0.2rem;
-              width: 0;
-              background-color: #fff;
-              transition: 0.3s;
-              margin-top: 0.7rem;
-            }
+
         }
       }
     }
@@ -132,6 +124,15 @@ body{
   color: #282828;
   margin: 4rem 0 4rem 0;
   max-width: 120rem;
+}
+div.underline{
+    display: block;
+    text-align: center;
+    height: 0.2rem;
+    width: 0;
+    background-color: #fff;
+    transition: 0.3s;
+    margin-top: 0.7rem;
 }
 #sec2-work-specify{
   width: 100%;
@@ -502,4 +503,308 @@ body{
   width: 100%;
   height: 20rem;
   background-color: $hover;
+}
+#sec7-team{
+  width: 100%;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eeeeee;
+  .team-box{
+    width: 120rem;
+    height: 42rem;
+    margin: 6rem 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    .tb-photo{
+      width: 60rem;
+      height: 42rem;
+      background-color: #fff;
+      position: relative;
+      z-index: 10;
+      background-position: bottom;
+      background-size: cover;
+      -webkit-box-shadow: 1px 12px 15px -11px rgba(0,0,0,0.51);
+      -moz-box-shadow: 1px 12px 15px -11px rgba(0,0,0,0.51);
+      box-shadow: 1px 12px 15px -11px rgba(0,0,0,0.51);
+    }
+    .tb-photo-left{
+      background-image: url('../images/pexels-photo-323503.jpeg');
+    }
+    .tb-photo-right{
+      background-image: url('../images/brooke-cagle-195777.jpg');
+
+    }
+    .tb-desc{
+      width: 60rem;
+      height: 42rem;
+      box-sizing: border-box;
+      padding-top: 6rem;
+      .tbd-title{
+        width: 50rem;
+        font-family: $way;
+        font-size: 2.8rem;
+        font-weight: 600;
+        color: #282828;
+      }
+      .tbd-content{
+        font-family: $way;
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: #282828;
+        margin: 2rem 0;
+      }
+      .tbd-subcont{
+        font-family: $way;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #000;
+        margin-bottom: 2rem;
+      }
+      .tbd-button{
+        width: 12rem;
+        height: 3.6rem;
+        box-sizing: border-box;
+        border: 1px solid $button;
+        display: flex;
+        transition: 0.2s;
+        &:hover{
+          background-color: $hover;
+          a{
+            color: #fff;
+          }
+          border: 1px solid $hover;
+        }
+        a{
+          margin: 0;
+          width: 12rem;
+          height: 3.6rem;
+          position: relative;
+          color: $button;
+          text-decoration: none;
+          display: flex;
+          p{
+            display: block;
+            position: relative;
+            margin: auto;
+            text-transform: uppercase;
+            font-family: $varela;
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+    .tb-right{
+      padding-left: 10rem;
+    }
+    .tb-left{
+      padding-right: 10rem;
+    }
+    .tb-back{
+      position: absolute;
+      width: 10rem;
+      height: 36rem;
+      top: 3rem;
+      background-color: $hover;
+      z-index: 0;
+    }
+    .tb-back-left{
+      left: -3rem;
+    }
+    .tb-back-right{
+      right: -3rem;
+    }
+  }
+}
+#sec8-top-footer{
+  width: 100%;
+  height: 40rem;
+  background-color: #1a1b1a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .data-frame {
+		min-width: 30rem;
+		min-height: 30rem;
+		display: flex;
+		flex-direction: row;
+		.data-col {
+			width: 30rem;
+			// min-height: 20rem;
+      iframe{
+        width: 50rem;
+        height: 24rem;
+        margin: 3rem 0 0 10rem;
+      }
+			.lc-title {
+				text-transform: uppercase;
+				color: #fff;
+				font-size: 1.8rem;
+				font-weight: 600;
+				letter-spacing: -0.02rem;
+				margin-top: 2.7rem;
+				margin-bottom: 2.6rem;
+			}
+			.data-row {
+				display: flex;
+				flex-direction: row;
+				margin-bottom: 0.7rem;
+				.item-loc {
+					height: 3.1rem;
+					display: block;
+					margin-right: 1.5rem;
+				}
+				.item-iphone {
+					display: block;
+					margin-right: 1.6rem;
+					margin-left: 0.2rem
+				}
+				.item-email {
+					display: block;
+					margin-right: 1.5rem;
+				}
+				.item-news {
+					display: block;
+					margin-right: 1.4rem;
+				}
+				.item-picture {
+					display: block;
+					margin-right: 1.4rem;
+				}
+				.item-media {
+					display: block;
+					margin-right: 1.8rem;
+					margin-left: 0.4rem;
+				}
+				.item-twitter {
+					display: block;
+					margin-right: 1.7rem;
+					height: 1.8rem;
+				}
+				.adres {
+					display: flex;
+					flex-direction: column;
+				}
+				.data-desc {
+					font-family: $varela;
+					font-size: 1.6rem;
+					display: flex;
+					flex-wrap: wrap;
+					.data-span {
+						line-height: 2.3rem;
+						position: relative;
+						bottom: 0.5rem;
+						color: #fff;
+						&:hover {
+							color: green;
+							cursor: pointer;
+						}
+						.hash {
+							font-weight: bold;
+							color: #fff;
+						}
+					}
+				}
+
+				.data-adres {
+					font-family: $varela;
+					color: #fff;
+					font-size: 1.6rem;
+					margin-bottom: 0.8rem;
+				}
+			}
+			.cent-l {
+				color: white;
+				display: flex;
+				align-items: center;
+				margin-bottom: 2rem;
+			}
+			.cent {
+				display: flex;
+				align-items: center;
+				margin-bottom: 2rem;
+				color: #fff;
+				&:hover {
+					cursor: pointer;
+					color: green;
+				}
+			}
+			.d-mid {
+				margin: 0 2rem;
+			}
+		}
+		.d-left {
+			margin-right: 1.6rem;
+		}
+    .d-right{
+      width: 50rem;
+      margin-right: 6rem;
+    }
+
+	}
+}
+#sec9-bottom-footer{
+  width: 100%;
+  height: 12.8rem;
+  background-color: $hover;
+	@include centering;
+	position: relative;
+	.socials {
+		position: relative;
+		z-index: 70;
+		display: flex;
+		flex-direction: row;
+		.s-item {
+			width: 4rem;
+			height: 4rem;
+			background-color: #1a1b1a;
+			border-radius: 50%;
+			margin: 0.5rem;
+			.footer-link {
+				display: block;
+				width: 4rem;
+				height: 4rem;
+				margin: 0;
+				padding: 0;
+				outline: none;
+				text-decoration: none;
+				border-radius: 50%;
+				@include centering;
+							}
+		}
+		.s-tweet {
+			&:hover {
+				background-color: $tweeter;
+			}
+		}
+		.s-faceb {
+			&:hover {
+				background-color: $facebook;
+			}
+		}
+		.s-pinter {
+			&:hover {
+				background-color: $pinterest;
+			}
+		}
+		.s-gplus {
+			&:hover {
+				background-color: $gplus;
+			}
+		}
+	}
+	.copyrights {
+    font-family: $varela;
+		position: absolute;
+		z-index: 100;
+		margin: 0 0 1rem 0;
+		left: 6rem;
+		top: 6rem;
+		font-size: 1.4rem;
+		color: $footgrey;
+		font-weight: 400;
+	}
 }
