@@ -465,7 +465,17 @@ div.underline {
 #sec6-enterprises {
   width: 100%;
   height: 20rem;
-  background-color: #A6C36F; }
+  background-color: #A6C36F;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  #sec6-enterprises .logos-cont {
+    display: flex;
+    flex-direction: row; }
+    #sec6-enterprises .logos-cont img {
+      display: block;
+      margin: 0 2.4rem; }
 
 #sec7-team {
   width: 100%;
