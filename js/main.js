@@ -1,5 +1,5 @@
 $(document).ready(initAll);
-  $(window).stellar();
+
 function initAll(){
 
   var timer1 = 0;

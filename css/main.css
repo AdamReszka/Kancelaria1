@@ -592,6 +592,7 @@ div.underline {
         height: 24rem;
         margin: 3rem 0 0 10rem; }
       #sec8-top-footer .data-frame .data-col .lc-title {
+        font-family: "Raleway", sans-serif;
         text-transform: uppercase;
         color: #fff;
         font-size: 1.8rem;
