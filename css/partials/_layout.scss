@@ -9,13 +9,13 @@ body{
 #sec1-main-cont{
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
-  background-image: url('../images/notes2.jpg');
+  background-image: url('../images/pexels-photo-567633.jpeg');
   background-size: cover;
   position: relative;
   .main-cover{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     position: relative;
   }
   nav{
@@ -75,7 +75,7 @@ body{
     }
     .sub-title{
       font-family: $way;
-      font-size: 2.4rem;
+      font-size: 3.6rem;
       font-weight: 300;
       color: #dedede;
       margin-bottom: 3.6rem;
@@ -91,7 +91,8 @@ body{
     width: 16rem;
     height: 3.6rem;
     color: #fff;
-    background-color: $button;
+    //background-color: $hover;
+    border: 0.1rem solid $hover;
     transition: 0.2s;
     &:hover{
       background-color: $hover;
@@ -108,7 +109,7 @@ body{
 .pauseline{
   height: 0.5rem;
   width: 10rem;
-  background-color: $button;
+  background-color: $hover;
 }
 .sec-header{
   font-family: $way;
@@ -196,7 +197,9 @@ div.underline{
         .ob-button{
           width: 12rem;
           height: 3.6rem;
-          background-color: $button;
+          //background-color: $hover;
+          background-color: #fff;
+          border: 0.1rem solid $hover;
           position: absolute;
           left: 3rem;
           bottom: 3rem;
@@ -204,13 +207,16 @@ div.underline{
           transition: 0.2s;
           &:hover{
             background-color: $hover;
+            a{
+              color: #fff;
+            }
           }
           a{
             margin: 0;
             width: 12rem;
             height: 3.6rem;
             position: relative;
-            color: #fff;
+            color: $hover;
             text-decoration: none;
             display: flex;
             p{
@@ -325,9 +331,9 @@ div.underline{
       .about-photo{
         width: 50rem;
         height: 62rem;
-        background-image: url('../images/jonna.jpg');
+        background-image: url('../images/stamp.jpg');
         background-size: cover;
-        background-position: center;
+        background-position: top;
         margin-left: -4rem;
       }
 
@@ -579,7 +585,7 @@ div.underline{
         width: 12rem;
         height: 3.6rem;
         box-sizing: border-box;
-        border: 1px solid $button;
+        border: 1px solid $hover;
         display: flex;
         transition: 0.2s;
         &:hover{
@@ -594,7 +600,7 @@ div.underline{
           width: 12rem;
           height: 3.6rem;
           position: relative;
-          color: $button;
+          color: $hover;
           text-decoration: none;
           display: flex;
           p{
@@ -632,31 +638,66 @@ div.underline{
 }
 #sec8-top-footer{
   width: 100%;
-  height: 40rem;
-  background-color: #1a1b1a;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  min-height: 40rem;
+  background-image: url('../images/clock-footer.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .top-footer-cover{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(1,22,40,0.96);
+    padding-bottom: 4rem;
+  }
+  .footer-title{
+    display: flex;
+    flex-direction: row;
+    width: 120rem;
+    margin: 6rem 0 2rem 0;
+    .footer-title-logo{
+      margin-right: 1rem;
+      background-image: url('../images/eagle-footer.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 11rem;
+      height: 11rem;
+    }
+    .footer-title-desc{
+
+    }
+    .footer-title-first{
+      font-family: $quick;
+      font-weight: 300;
+      color: #fff;
+      font-size: 2.8rem;
+      text-transform: uppercase;
+      margin: 0 0 1.2rem 0;
+    }
+  }
   .data-frame {
-		min-width: 30rem;
+    width: 120rem;
 		min-height: 30rem;
 		display: flex;
 		flex-direction: row;
 		.data-col {
-			width: 30rem;
+			width: 37rem;
+      margin-right: 1.6rem;
 			// min-height: 20rem;
       iframe{
-        width: 50rem;
-        height: 24rem;
-        margin: 3rem 0 0 10rem;
+        width: 24rem;
+        height: 26rem;
+        margin: 3rem 0 0 0;
       }
 			.lc-title {
-        font-family: $way;
+        font-family: $quick;
 				text-transform: uppercase;
 				color: #fff;
-				font-size: 1.8rem;
-				font-weight: 600;
+				font-size: 2rem;
+				font-weight: 500;
 				letter-spacing: -0.02rem;
 				margin-top: 2.7rem;
 				margin-bottom: 2.6rem;
@@ -664,7 +705,7 @@ div.underline{
 			.data-row {
 				display: flex;
 				flex-direction: row;
-				margin-bottom: 0.7rem;
+				margin-bottom: 1.2rem;
 				.item-loc {
 					height: 3.1rem;
 					display: block;
@@ -677,8 +718,12 @@ div.underline{
 				}
 				.item-email {
 					display: block;
-					margin-right: 1.5rem;
+					margin: 0 1.3rem 0 0.2rem;
 				}
+        .item-calendar {
+          width: 2.6rem;
+          margin-right: 1.4rem;
+        }
 				.item-news {
 					display: block;
 					margin-right: 1.4rem;
@@ -702,28 +747,43 @@ div.underline{
 					flex-direction: column;
 				}
 				.data-desc {
-					font-family: $varela;
+					font-family: $quick;
+          font-weight: 300;
 					font-size: 1.6rem;
 					display: flex;
 					flex-wrap: wrap;
+          margin-bottom: 0.8rem;
+          .margin-span{
+            margin-right: 0.2rem;
+          }
+          .data-week {
+            width: 15rem;
+          }
+          .data-week-last {
+            width: 23rem;
+            line-height: 2.5rem;
+          }
 					.data-span {
 						line-height: 2.3rem;
 						position: relative;
 						bottom: 0.5rem;
 						color: #fff;
-						&:hover {
-							color: green;
-							cursor: pointer;
-						}
 						.hash {
 							font-weight: bold;
 							color: #fff;
 						}
 					}
+          &.data-desc-account{
+            font-size: 1.5rem;
+            &.title{
+              margin-top: 2rem;
+            }
+          }
 				}
 
 				.data-adres {
-					font-family: $varela;
+					font-family: $quick;
+          font-weight: 300;
 					color: #fff;
 					font-size: 1.6rem;
 					margin-bottom: 0.8rem;
@@ -732,18 +792,16 @@ div.underline{
 			.cent-l {
 				color: white;
 				display: flex;
-				align-items: center;
+				align-items: flex-start;
+        flex-direction: row;
 				margin-bottom: 2rem;
 			}
 			.cent {
 				display: flex;
-				align-items: center;
+				align-items: flex-start;
 				margin-bottom: 2rem;
 				color: #fff;
-				&:hover {
-					cursor: pointer;
-					color: green;
-				}
+
 			}
 			.d-mid {
 				margin: 0 2rem;
@@ -753,16 +811,16 @@ div.underline{
 			margin-right: 1.6rem;
 		}
     .d-right{
-      width: 50rem;
-      margin-right: 6rem;
+      width: 24rem;
+      margin-right: 0;
     }
 
 	}
 }
 #sec9-bottom-footer{
   width: 100%;
-  height: 12.8rem;
-  background-color: $hover;
+  height: 6rem;
+  background-color: #fff;
 	@include centering;
 	position: relative;
 	.socials {
@@ -815,7 +873,7 @@ div.underline{
 		z-index: 100;
 		margin: 0 0 1rem 0;
 		left: 6rem;
-		top: 6rem;
+		top: 2.6rem;
 		font-size: 1.4rem;
 		color: $footgrey;
 		font-weight: 400;
