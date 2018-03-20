@@ -667,6 +667,10 @@ div.underline {
         #sec5-customers-section .customers-slider ul li .quote-logo .fa-quote-left {
           color: #22AED1;
           font-size: 5rem; }
+        #sec5-customers-section .customers-slider ul li .quote-logo .question-icon {
+          display: block;
+          width: 5rem;
+          height: 5rem; }
         #sec5-customers-section .customers-slider ul li .quote-desc {
           font-family: "Raleway", sans-serif;
           font-size: 2rem;

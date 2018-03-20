@@ -726,6 +726,11 @@ div.underline{
             color: $hover;
             font-size: 5rem;
           }
+          .question-icon{
+            display: block;
+            width: 5rem;
+            height: 5rem;
+          }
         }
         .quote-desc{
           font-family: $way;
