@@ -117,12 +117,12 @@ body {
       margin-bottom: 3.6rem; }
 
 .main-button {
-  width: 16rem;
+  width: 24rem;
   height: 3.6rem; }
   .main-button a {
     display: flex;
     text-decoration: none;
-    width: 16rem;
+    width: 24rem;
     height: 3.6rem;
     color: #fff;
     border: 0.1rem solid #22AED1;
