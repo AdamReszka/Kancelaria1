@@ -10,6 +10,7 @@ function initAll(){
   startParallax();
   contactService();
   goToForm();
+  movingMenu()
 }
 
 function setHeight(){
@@ -198,4 +199,15 @@ function goToForm() {
       $('#main-contact-form').removeClass('fadeOutUp');
     }, 1000);
   });
+}
+
+function movingMenu(){
+  jQuery('.menu-button').click(function(event){
+		event = event || window.event;
+		var sectionID = event.currentTarget.id + "-section";
+
+		jQuery("html,body").animate({
+			scrollTop: jQuery("#" + sectionID).offset().top
+		}, 1000)
+	});
 }
