@@ -11,6 +11,7 @@
   <script src="js\main.js"></script>
   <title>Kancelaria</title>
   <link rel="stylesheet" href="css\font-awesome-4.7.0\css\font-awesome.min.css">
+  <link rel="stylesheet" href="css\animate.css">
   <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500" rel="stylesheet">
@@ -82,7 +83,59 @@
           </a>
         </div>
       </div>
+      <div class="first-contact-box">
+
+          <div id="first-contact-phone" class="fc-coin animated">
+            <div class="contact-phone-inner-box">
+              <p class="contact-phone-number">22 251 43 15</p>
+              <img src="..\images\phone-receiver.png" alt="phone">
+            </div>
+          </div>
+          <div id="first-contact-form" class="fc-coin animated">
+            <img src="..\images\email.png" alt="phone">
+            <div class="first-contact-info">
+              <p class="question-title">Masz pytanie?</p>
+              <p class="question-description">
+                Zaoszczędzisz czas, gdy wyślesz je do nas bezpośrednio.
+              </p>
+              <div id="first-contact-button">
+                <p>
+                  napisz do nas
+                </p>
+              </div>
+            </div>
+          </div>
+
+      </div>
     </div>
+  </div>
+  <div id="contact-form-layer" class="animated">
+    <div class="cf-layer-cover">
+
+      <div id="main-contact-form" class="contact-form animated">
+        <form id="main-form" action="">
+          <p class="form-title">Wyślij nam swoje pytanie</p>
+          <label for="name">imię i nazwisko:</label>
+          <input id="name" class="main-form-input" type="text">
+          <label for="email">email:</label>
+          <input id="email" class="main-form-input" type="email">
+          <label for="main-question-textarea">twoje pytanie:</label>
+          <textarea id="main-question-textarea" name="question"></textarea>
+          <div class="button-box">
+            <button id="main-form-submit" type="submit">Wyślij pytanie</button>
+          </div>
+        </form>
+        <div class="close-form">
+          <div id="close-x-container">
+            <img class="close-white" src="images\close-white.png" alt="close image">
+            <img class="close-blue" src="images\close-blue.png" alt="close image">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
   </div>
   <div id="sec2-work-specify">
     <p class="sec-header">
@@ -537,7 +590,7 @@
               <p class="data-desc"><span class="data-week">środa</span>09:00-17:00</p>
               <p class="data-desc"><span class="data-week">czwartek</span>09:00-17:00</p>
               <p class="data-desc"><span class="data-week">piątek</span>09:00-15:00</p>
-              <p class="data-desc"><span class="data-week-last">sobota - po wcześniejszym uzgodnieniu</span></p>
+              <p class="data-desc data-desc-account info">Jeżeli potrzebujesz spotkania<br/> w innych godzinach lub w sobotę zadzwoń do nas.</p>
             </div>
 
 					</div>
