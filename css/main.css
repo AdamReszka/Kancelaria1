@@ -155,7 +155,8 @@ body {
   font-weight: 300;
   color: #282828;
   margin: 4rem 0 4rem 0;
-  max-width: 120rem; }
+  max-width: 120rem;
+  line-height: 3rem; }
 
 div.underline {
   display: block;
@@ -288,7 +289,7 @@ div.underline {
     .first-contact-box #first-contact-form.display-flex {
       display: flex; }
 
-#contact-form-layer {
+.additional-layer-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -296,11 +297,16 @@ div.underline {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 100;
   flex-direction: row;
   justify-content: center; }
-  #contact-form-layer.open {
+  .additional-layer-container.open {
     display: flex; }
+
+#faq-layer {
+  z-index: 101; }
+
+#contact-form-layer {
+  z-index: 100; }
 
 #main-contact-form {
   background-color: #22AED1;
@@ -645,7 +651,8 @@ div.underline {
   background-color: #eeeeee;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 6rem; }
   #sec5-customers-section .customers-slider {
     height: 40rem;
     margin: 5rem 0 0 0;
@@ -656,7 +663,6 @@ div.underline {
       display: block;
       height: 40rem; }
       #sec5-customers-section .customers-slider ul li {
-        display: block;
         width: 120rem;
         height: 40rem;
         float: left;
@@ -673,24 +679,61 @@ div.underline {
           height: 5rem; }
         #sec5-customers-section .customers-slider ul li .quote-desc {
           font-family: "Raleway", sans-serif;
-          font-size: 2rem;
-          font-weight: 300;
+          font-size: 2.4rem;
+          font-weight: 500;
           color: #282828;
           margin: 4rem 0 4rem 0;
           max-width: 120rem;
           text-align: center;
           font-style: italic;
-          line-height: 2.4rem; }
+          line-height: 3rem;
+          height: 6rem; }
         #sec5-customers-section .customers-slider ul li .quote-author {
           font-family: "Raleway", sans-serif;
-          font-size: 2.8rem;
-          font-weight: 600; }
-        #sec5-customers-section .customers-slider ul li .quote-author-enterprise {
-          font-family: "Raleway", sans-serif;
-          color: #282828;
-          font-size: 2rem;
+          font-size: 2.4rem;
           font-weight: 300;
-          margin: 1rem 0 0 0; }
+          max-width: 120rem;
+          height: 9.5rem;
+          line-height: 3rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: flex;
+          flex-wrap: wrap; }
+          #sec5-customers-section .customers-slider ul li .quote-author__read-more {
+            height: 3rem;
+            line-height: 3rem;
+            align-self: flex-start; }
+        #sec5-customers-section .customers-slider ul li .faq-extention-buttons {
+          display: flex;
+          flex-direction: row; }
+          #sec5-customers-section .customers-slider ul li .faq-extention-buttons .ext-button {
+            height: 3.6rem;
+            box-sizing: border-box;
+            border: 1px solid #22AED1;
+            display: flex;
+            transition: 0.2s;
+            margin: 4rem 1rem 2rem 1rem; }
+            #sec5-customers-section .customers-slider ul li .faq-extention-buttons .ext-button:hover {
+              background-color: #22AED1;
+              border: 1px solid #22AED1; }
+              #sec5-customers-section .customers-slider ul li .faq-extention-buttons .ext-button:hover a {
+                color: #fff; }
+            #sec5-customers-section .customers-slider ul li .faq-extention-buttons .ext-button a {
+              margin: 0;
+              height: 3.6rem;
+              position: relative;
+              color: #22AED1;
+              text-decoration: none;
+              display: flex;
+              padding: 0 1.2rem;
+              cursor: pointer; }
+              #sec5-customers-section .customers-slider ul li .faq-extention-buttons .ext-button a p {
+                display: block;
+                position: relative;
+                margin: auto;
+                text-transform: uppercase;
+                font-family: "Varela Round", sans-serif;
+                font-size: 1.6rem; }
   #sec5-customers-section .move-slider {
     width: 6.4rem;
     height: 6.4rem;

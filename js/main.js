@@ -10,6 +10,7 @@ function initAll(){
   startParallax();
   contactService();
   goToForm();
+  goToFAQ();
   movingMenu()
 }
 
@@ -203,6 +204,16 @@ function goToForm() {
       $('#contact-form-layer').removeClass('open');
       $('#main-contact-form').removeClass('fadeOutUp');
     }, 1000);
+  });
+}
+
+function goToFAQ(){
+  $('.readmore-button').each(function() {
+    $(this).on('click', function() {
+      $(this).closest('body').find('#faq-layer').removeClass('fadeOut');
+      $(this).closest('body').find('#faq-layer').addClass('open');
+      $(this).closest('body').find('#faq-layer').addClass('fadeIn');
+    });
   });
 }
 
