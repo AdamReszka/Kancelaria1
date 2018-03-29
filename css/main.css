@@ -305,6 +305,108 @@ div.underline {
 #faq-layer {
   z-index: 101; }
 
+.questions-cover {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.q-header {
+  width: 100%;
+  text-align: center;
+  margin: 4rem 0 2rem 0;
+  color: #22AED1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: uppercase; }
+
+.q-subheader {
+  width: 100%;
+  text-align: center;
+  color: #22AED1;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem; }
+
+.questions-container {
+  width: 90rem;
+  min-height: 40rem;
+  border-radius: 3.6rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 5rem 4rem 5rem;
+  position: relative; }
+  .questions-container .faq-single-question {
+    font-family: "Raleway", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #282828;
+    margin-bottom: 2rem;
+    transition: 0.2s;
+    cursor: pointer; }
+    .questions-container .faq-single-question:hover {
+      color: #22AED1; }
+  .questions-container .faq-answer-screen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 70;
+    display: none;
+    background-color: #fff;
+    border-radius: 3.6rem;
+    box-sizing: border-box;
+    padding: 0 5rem 4rem 5rem; }
+    .questions-container .faq-answer-screen.open {
+      display: block; }
+    .questions-container .faq-answer-screen .faq-answer-cover {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .questions-container .faq-answer-screen .faq-answer-cover .question-close-button {
+        border: 0.1rem solid #22AED1;
+        height: 4rem;
+        width: 12rem;
+        margin: 4rem auto 0 auto;
+        cursor: pointer;
+        display: flex;
+        transition: 0.2s; }
+        .questions-container .faq-answer-screen .faq-answer-cover .question-close-button p {
+          margin: auto;
+          text-transform: uppercase;
+          font-family: "Varela Round", sans-serif;
+          font-size: 1.6rem;
+          color: #22AED1; }
+        .questions-container .faq-answer-screen .faq-answer-cover .question-close-button:hover {
+          background-color: #22AED1; }
+          .questions-container .faq-answer-screen .faq-answer-cover .question-close-button:hover p {
+            color: #fff; }
+
+.faq-answer-question {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #282828;
+  margin: 4rem 0 2rem 0; }
+
+.faq-answer-answer {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #000;
+  line-height: 2.6rem; }
+
 #contact-form-layer {
   z-index: 100; }
 

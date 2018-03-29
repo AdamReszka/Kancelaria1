@@ -11,7 +11,8 @@ function initAll(){
   contactService();
   goToForm();
   goToFAQ();
-  movingMenu()
+  movingMenu();
+  questionBrowser();
 }
 
 function setHeight(){
@@ -226,4 +227,18 @@ function movingMenu(){
 			scrollTop: jQuery("#" + sectionID).offset().top
 		}, 1000)
 	});
+}
+
+function questionBrowser(){
+  $('.faq-single-question').click(function(event){
+    event = event || window.event;
+    var questionID = event.currentTarget.id + "-question";
+    $('#' + questionID).addClass('open');
+  });
+  $('.question-close-button').each(function() {
+
+    $(this).on('click', function() {
+      $(this).closest('.faq-answer-screen').removeClass('open');
+    });
+  });
 }
