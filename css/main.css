@@ -53,6 +53,73 @@ body {
   padding: 0;
   color: #000; }
 
+.main-sticky-nav {
+  width: 100%;
+  height: 9rem;
+  background-color: #22AED1;
+  z-index: 1000;
+  top: -9rem;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative; }
+  .main-sticky-nav.sticky {
+    position: fixed; }
+  .main-sticky-nav.open {
+    top: 0;
+    -webkit-box-shadow: 1px 12px 15px -11px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 1px 12px 15px -11px rgba(0, 0, 0, 0.51);
+    box-shadow: 1px 12px 15px -11px rgba(0, 0, 0, 0.51); }
+  .main-sticky-nav .sticky-nav-eagle {
+    position: absolute;
+    left: 8rem;
+    top: 1.4rem;
+    width: 6rem;
+    height: 6rem;
+    background-image: url("../images/eagle-footer.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .main-sticky-nav .sticky-title {
+    margin: 1.6rem 0 -1.5rem 15rem;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase; }
+
+.main-ul {
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 6rem;
+  padding: 0;
+  height: 7rem; }
+  .main-ul.eagle {
+    margin: 0 0 0 13rem; }
+  .main-ul li {
+    height: 7rem;
+    display: flex; }
+    .main-ul li a {
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 2rem 0 2rem;
+      cursor: pointer; }
+      .main-ul li a:hover div.underline {
+        width: 100%; }
+      .main-ul li a p {
+        margin: 0;
+        padding: 0;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin-top: 2.9rem;
+        font-weight: 500; }
+
 #sec1-main-cont {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -68,35 +135,6 @@ body {
     width: 100%;
     height: 7rem;
     position: relative; }
-    #sec1-main-cont nav .main-ul {
-      font-family: "Varela Round", sans-serif;
-      display: flex;
-      flex-direction: row;
-      margin: 0 0 0 6rem;
-      padding: 0;
-      height: 7rem; }
-      #sec1-main-cont nav .main-ul li {
-        height: 7rem;
-        display: flex; }
-        #sec1-main-cont nav .main-ul li a {
-          text-decoration: none;
-          margin: 0;
-          padding: 0;
-          color: #fff;
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          padding: 0 2rem 0 2rem;
-          cursor: pointer; }
-          #sec1-main-cont nav .main-ul li a:hover div.underline {
-            width: 100%; }
-          #sec1-main-cont nav .main-ul li a p {
-            margin: 0;
-            padding: 0;
-            font-size: 1.4rem;
-            text-transform: uppercase;
-            margin-top: 2.9rem;
-            font-weight: 500; }
   #sec1-main-cont .title-cont {
     width: 46vw;
     height: 40rem;
@@ -135,12 +173,15 @@ body {
       padding: 0;
       text-transform: uppercase;
       font-family: "Varela Round", sans-serif;
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      height: 1.6rem; }
 
 .pauseline {
   height: 0.5rem;
   width: 10rem;
   background-color: #22AED1; }
+  .pauseline.white {
+    background-color: #fff; }
 
 .sec-header {
   font-family: "Raleway", sans-serif;
@@ -148,6 +189,8 @@ body {
   font-size: 4rem;
   text-transform: uppercase;
   margin: 8rem 0 4rem 0; }
+  .sec-header.white {
+    color: #fff; }
 
 .header-desc {
   font-family: "Raleway", sans-serif;
@@ -157,6 +200,8 @@ body {
   margin: 4rem 0 4rem 0;
   max-width: 120rem;
   line-height: 3rem; }
+  .header-desc.white {
+    color: #fff; }
 
 div.underline {
   display: block;
@@ -230,6 +275,7 @@ div.underline {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     margin-top: 1.8rem;
+    max-width: 84%;
     padding: 0 2.2rem;
     line-height: 3rem; }
   .first-contact-box #first-contact-form {
@@ -277,7 +323,8 @@ div.underline {
           margin: auto;
           font-size: 2.2rem;
           font-family: "Varela Round", sans-serif;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          height: 2.2rem; }
         .first-contact-box #first-contact-form .first-contact-info #first-contact-button:hover {
           background-color: #fff; }
           .first-contact-box #first-contact-form .first-contact-info #first-contact-button:hover p {
@@ -344,12 +391,13 @@ div.underline {
   position: relative; }
   .questions-container .faq-single-question {
     font-family: "Raleway", sans-serif;
-    font-size: 2.4rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 400;
     color: #282828;
     margin-bottom: 2rem;
     transition: 0.2s;
-    cursor: pointer; }
+    cursor: pointer;
+    line-height: 2.4rem; }
     .questions-container .faq-single-question:hover {
       color: #22AED1; }
   .questions-container .faq-answer-screen {
@@ -376,8 +424,8 @@ div.underline {
       .questions-container .faq-answer-screen .faq-answer-cover .question-close-button {
         border: 0.1rem solid #22AED1;
         height: 4rem;
-        width: 12rem;
-        margin: 4rem auto 0 auto;
+        width: 20rem;
+        margin: 2.5rem auto 0 auto;
         cursor: pointer;
         display: flex;
         transition: 0.2s; }
@@ -395,17 +443,17 @@ div.underline {
 .faq-answer-question {
   width: 100%;
   font-family: "Raleway", sans-serif;
-  font-size: 2.4rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 400;
   color: #282828;
-  margin: 4rem 0 2rem 0; }
+  margin: 2rem 0 2rem 0; }
 
 .faq-answer-answer {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 300;
   color: #000;
-  line-height: 2.6rem; }
+  line-height: 2.4rem; }
 
 #contact-form-layer {
   z-index: 100; }
@@ -519,13 +567,42 @@ div.underline {
         .cf-layer-cover .contact-form .close-form #close-x-container:hover .close-white {
           opacity: 0; }
 
+.close-form {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: -5rem;
+  font-size: 5rem;
+  width: 4rem;
+  height: 4rem; }
+  .close-form #close-q-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer; }
+    .close-form #close-q-container img {
+      width: 4rem;
+      height: 4rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: 0.3s; }
+      .close-form #close-q-container img.close-white {
+        z-index: 50;
+        opacity: 1; }
+      .close-form #close-q-container img.close-blue {
+        z-index: 45; }
+    .close-form #close-q-container:hover .close-white {
+      opacity: 0; }
+
 #sec2-work-specify-section {
   width: 100%;
   min-height: 46rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  padding-top: 7rem; }
   #sec2-work-specify-section .offer-box {
     display: flex;
     flex-direction: row;
@@ -596,7 +673,8 @@ div.underline {
             margin: auto;
             text-transform: uppercase;
             font-family: "Varela Round", sans-serif;
-            font-size: 1.6rem; }
+            font-size: 1.6rem;
+            height: 1.6rem; }
 
 #sec3-about-section {
   width: 100%;
@@ -777,14 +855,14 @@ div.underline {
           font-size: 5rem; }
         #sec5-customers-section .customers-slider ul li .quote-logo .question-icon {
           display: block;
-          width: 5rem;
-          height: 5rem; }
+          width: 6.4rem;
+          height: 6.4rem; }
         #sec5-customers-section .customers-slider ul li .quote-desc {
           font-family: "Raleway", sans-serif;
           font-size: 2.4rem;
           font-weight: 500;
           color: #282828;
-          margin: 4rem 0 4rem 0;
+          margin: 3rem 0 1rem 0;
           max-width: 120rem;
           text-align: center;
           font-style: italic;
@@ -800,7 +878,9 @@ div.underline {
           overflow: hidden;
           text-overflow: ellipsis;
           display: flex;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+          box-sizing: border-box;
+          padding: 0 1rem; }
           #sec5-customers-section .customers-slider ul li .quote-author__read-more {
             height: 3rem;
             line-height: 3rem;
@@ -835,11 +915,13 @@ div.underline {
                 margin: auto;
                 text-transform: uppercase;
                 font-family: "Varela Round", sans-serif;
-                font-size: 1.6rem; }
+                font-size: 1.6rem;
+                height: 1.6rem; }
   #sec5-customers-section .move-slider {
     width: 6.4rem;
     height: 6.4rem;
-    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #22AED1;
     margin: 0 5rem;
     display: flex; }
     #sec5-customers-section .move-slider .ps-arrow {
@@ -860,20 +942,41 @@ div.underline {
     flex-direction: row;
     align-items: center; }
 
-#sec6-enterprises {
+#sec6-enterprises-section {
   width: 100%;
-  height: 20rem;
+  min-height: 20rem;
   background-color: #22AED1;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; }
-  #sec6-enterprises .logos-cont {
+  flex-direction: column;
+  align-items: center; }
+  #sec6-enterprises-section .logos-cont {
     display: flex;
     flex-direction: row; }
-    #sec6-enterprises .logos-cont img {
+    #sec6-enterprises-section .logos-cont img {
       display: block;
       margin: 0 2.4rem; }
+
+.section-button {
+  width: 27rem;
+  height: 4rem;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 0.6rem 0 8rem 0;
+  display: flex;
+  transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  text-decoration: none; }
+  .section-button p {
+    margin: auto;
+    font-size: 1.6rem;
+    font-family: "Varela Round", sans-serif;
+    text-transform: uppercase;
+    height: 1.6rem; }
+  .section-button:hover {
+    background-color: #fff; }
+    .section-button:hover p {
+      color: #22AED1; }
 
 #sec7-team-section {
   width: 100%;
@@ -953,7 +1056,8 @@ div.underline {
             margin: auto;
             text-transform: uppercase;
             font-family: "Varela Round", sans-serif;
-            font-size: 1.6rem; }
+            font-size: 1.6rem;
+            height: 1.6rem; }
     #sec7-team-section .team-box .tb-right {
       padding-left: 10rem; }
     #sec7-team-section .team-box .tb-left {
@@ -1165,5 +1269,12 @@ div.underline {
     font-size: 1.4rem;
     color: #555555;
     font-weight: 400; }
+
+#sec1-prices-subsite-section {
+  width: 100%;
+  margin-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 /*# sourceMappingURL=main.css.map */

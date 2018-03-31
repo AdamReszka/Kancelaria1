@@ -13,6 +13,7 @@ function initAll(){
   goToFAQ();
   movingMenu();
   questionBrowser();
+  openStickyNav();
 }
 
 function setHeight(){
@@ -210,11 +211,58 @@ function goToForm() {
 
 function goToFAQ(){
   $('.readmore-button').each(function() {
-    $(this).on('click', function() {
+    $(this).on('click', function(event) {
+      $(this).closest('body').find('.questions-container').removeClass('fadeOutUp');
       $(this).closest('body').find('#faq-layer').removeClass('fadeOut');
       $(this).closest('body').find('#faq-layer').addClass('open');
       $(this).closest('body').find('#faq-layer').addClass('fadeIn');
+      event = event || window.event;
+      var questionID = event.currentTarget.id + "-question";
+      $('#' + questionID).addClass('open');
+      $(this).closest('body').find('.questions-container').addClass('fadeInDown');
     });
+  });
+  $('.all-questions-button').each(function() {
+    $(this).on('click', function() {
+      $(this).closest('body').find('.questions-container').removeClass('fadeOutUp');
+      $(this).closest('body').find('#faq-layer').removeClass('fadeOut');
+      $(this).closest('body').find('#faq-layer').addClass('open');
+      $(this).closest('body').find('#faq-layer').addClass('fadeIn');
+      $(this).closest('body').find('.questions-container').addClass('fadeInDown');
+    });
+  });
+  $('#close-q-container').on('click', function() {
+    $(this).closest('body').find('.questions-container').removeClass('fadeInDown');
+    $(this).closest('body').find('.questions-container').addClass('fadeOutUp');
+    $('#faq-layer').removeClass('fadeIn');
+    $('#faq-layer').addClass('fadeOut');
+    setTimeout(function(){
+      $('#faq-layer').removeClass('open');
+      $('.faq-answer-screen').each(function() {
+        $(this).removeClass('open');
+      });
+    }, 1000);
+  });
+  $('.questions-cover').on('click', function(e) {
+    if (e.target !== this) {
+      return;
+    } else {
+      if($('#faq-layer').hasClass('open')) {
+        $('#faq-layer').removeClass('fadeIn');
+        $('#faq-layer').addClass('fadeOut');
+        setTimeout(function(){
+          $('#faq-layer').removeClass('open');
+          $('.faq-answer-screen').each(function() {
+            $(this).removeClass('open');
+          });
+        }, 500);
+      }
+    }
+  });
+  $(document).keypress(function(e) {
+    if(e.which == 27) {
+      alert('ok');
+    }
   });
 }
 
@@ -240,5 +288,17 @@ function questionBrowser(){
     $(this).on('click', function() {
       $(this).closest('.faq-answer-screen').removeClass('open');
     });
+  });
+}
+
+function openStickyNav() {
+  objectPositionTop = $('#sec2-work-specify-section').offset().top;
+  $(window).on('scroll', function() {
+    var currentPosition = $(document).scrollTop();
+    if (currentPosition >= objectPositionTop-1) {
+      $('#main-sticky-nav').addClass('open');
+    } else {
+      $('#main-sticky-nav').removeClass('open');
+    }
   });
 }
