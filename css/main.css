@@ -1277,4 +1277,34 @@ div.underline {
   flex-direction: column;
   align-items: center; }
 
+.section-subheader {
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-top: 4rem; }
+  .section-subheader.bottom-margin {
+    margin-bottom: 4rem; }
+
+.header-desc.subheader {
+  font-size: 2rem; }
+
+.prices-list li {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #282828;
+  max-width: 120rem;
+  line-height: 3rem;
+  list-style-type: circle; }
+
+.prices-add-desc {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #282828;
+  max-width: 120rem;
+  line-height: 3rem;
+  margin-top: 4rem; }
+
 /*# sourceMappingURL=main.css.map */
