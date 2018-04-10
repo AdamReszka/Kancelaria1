@@ -1533,7 +1533,7 @@ div.underline{
   max-width: 120rem;
   .price-item {
     width: 30rem;
-    min-height: 40rem;
+    min-height: 26rem;
     background-color: #fff;
     margin: 0 2rem;
     display: flex;
@@ -1578,6 +1578,14 @@ div.underline{
       font-weight: 300;
       max-width: 90%;
       margin-top: 2.6rem;
+    }
+    .price-item-desc{
+      text-align: center;
+      max-width: 90%;
+      font-family: $quick;
+      margin: 2rem 0 0 0;
+      font-size: 1.7rem;
+      font-weight: 300;
     }
   }
 }
