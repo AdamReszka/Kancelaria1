@@ -1275,7 +1275,8 @@ div.underline {
   margin-top: 9rem;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  background-color: #eeeeee; }
 
 .price-article {
   width: 100%;
@@ -1297,7 +1298,8 @@ div.underline {
     color: #fff; }
 
 .header-desc.subheader {
-  font-size: 2rem; }
+  font-size: 2rem;
+  text-align: center; }
   .header-desc.subheader.white {
     color: #fff; }
 
@@ -1374,5 +1376,65 @@ div.underline {
       margin: 2rem 0 0 0;
       font-size: 1.7rem;
       font-weight: 300; }
+
+.constant-prices-container {
+  width: 120rem;
+  height: 52rem;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem; }
+  .constant-prices-container .const-name {
+    margin: auto; }
+  .constant-prices-container .const-col {
+    width: 40rem;
+    display: flex;
+    flex-direction: column; }
+    .constant-prices-container .const-col .const-box {
+      display: flex;
+      background-color: #ffffff;
+      transition: 0.3s;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: .7rem;
+      position: relative;
+      z-index: 10; }
+      .constant-prices-container .const-col .const-box__blue {
+        background-color: #22AED1; }
+        .constant-prices-container .const-col .const-box__blue p {
+          color: #fff; }
+      .constant-prices-container .const-col .const-box__dark {
+        background-color: #022139; }
+        .constant-prices-container .const-col .const-box__dark p {
+          color: #fff; }
+      .constant-prices-container .const-col .const-box:hover {
+        z-index: 50;
+        -webkit-box-shadow: 0px 10px 18px -8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 10px 18px -8px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 10px 18px -8px rgba(0, 0, 0, 0.75); }
+      .constant-prices-container .const-col .const-box p {
+        max-width: 90%;
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+        font-size: 2rem;
+        font-weight: 300; }
+        .constant-prices-container .const-col .const-box p.price {
+          font-size: 3.2rem;
+          margin-bottom: 0.6rem; }
+    .constant-prices-container .const-col .lil-box {
+      height: 12rem;
+      width: 39rem;
+      box-sizing: border-box;
+      margin: 1rem 0 0 1rem; }
+      .constant-prices-container .const-col .lil-box:last-child {
+        margin: 1rem 0 1rem 1rem; }
+    .constant-prices-container .const-col .mid-box {
+      width: 39rem;
+      height: 24.5rem;
+      margin: 1rem 0 0 1rem; }
+    .constant-prices-container .const-col .big-box {
+      width: 38rem;
+      height: 50rem;
+      margin: 1rem; }
 
 /*# sourceMappingURL=main.css.map */
