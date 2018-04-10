@@ -202,6 +202,10 @@ body {
   line-height: 3rem; }
   .header-desc.white {
     color: #fff; }
+  .header-desc.small {
+    font-size: 1.5rem; }
+    .header-desc.small sup {
+      font-size: 2rem; }
 
 div.underline {
   display: block;
@@ -1436,5 +1440,68 @@ div.underline {
       width: 38rem;
       height: 50rem;
       margin: 1rem; }
+
+.relative-prices-container {
+  max-width: 120rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 6rem;
+  justify-content: center; }
+  .relative-prices-container .rpc-item {
+    position: relative;
+    width: 28.4rem;
+    height: 24rem;
+    margin-right: 1rem;
+    margin-bottom: 5rem;
+    background-color: #fff;
+    border-radius: .7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    -webkit-box-shadow: 1px 12px 15px -11px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 1px 12px 15px -11px rgba(0, 0, 0, 0.51);
+    box-shadow: 1px 12px 15px -11px rgba(0, 0, 0, 0.51); }
+    .relative-prices-container .rpc-item:last-child {
+      margin-right: 0; }
+    .relative-prices-container .rpc-item .rpc-item-price {
+      width: 24.2rem;
+      height: 4.2rem;
+      border-radius: .7rem;
+      background-color: #022139;
+      position: absolute;
+      left: 2.1rem;
+      top: 9.8rem;
+      display: flex; }
+      .relative-prices-container .rpc-item .rpc-item-price p {
+        margin: auto;
+        font-family: "Quicksand", sans-serif;
+        font-size: 3.2rem;
+        color: #fff;
+        font-weight: 300; }
+    .relative-prices-container .rpc-item .rpc-borders {
+      width: 100%;
+      height: 12rem;
+      background-color: #22AED1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .relative-prices-container .rpc-item .rpc-borders p {
+        font-family: "Quicksand", sans-serif;
+        font-weight: 300;
+        font-size: 2.4rem;
+        color: #fff;
+        padding: .3rem; }
+        .relative-prices-container .rpc-item .rpc-borders p.lower {
+          border-bottom: 1px solid #fff; }
+    .relative-prices-container .rpc-item .rpc-plus {
+      margin-top: 3.2rem;
+      font-family: "Quicksand", sans-serif;
+      font-size: 2rem;
+      font-weight: 300;
+      max-width: 90%;
+      text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
