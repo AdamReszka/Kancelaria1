@@ -1280,13 +1280,15 @@ div.underline {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  padding-bottom: 8rem; }
 
 .price-article {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding: 4rem 0; }
   .price-article__blue {
     background-color: #22AED1; }
 
@@ -1300,21 +1302,44 @@ div.underline {
     margin-bottom: 4rem; }
   .section-subheader.white {
     color: #fff; }
+  .section-subheader.top-margin {
+    margin-top: 8rem; }
 
 .header-desc.subheader {
   font-size: 2rem;
   text-align: center; }
   .header-desc.subheader.white {
     color: #fff; }
+  .header-desc.subheader.dark-header {
+    background-color: #022139;
+    color: #fff;
+    border-radius: .7rem .7rem 0 0;
+    padding: 1.2rem;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    font-size: 2.4rem; }
+  .header-desc.subheader.section-margin-bottom {
+    margin-bottom: 8rem; }
 
-.prices-list li {
-  font-family: "Raleway", sans-serif;
-  font-size: 2rem;
-  font-weight: 300;
-  color: #282828;
-  max-width: 120rem;
-  line-height: 3rem;
-  list-style-type: circle; }
+.prices-list {
+  margin-bottom: 4rem; }
+  .prices-list li {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #282828;
+    max-width: 120rem;
+    line-height: 3rem;
+    box-sizing: border-box;
+    padding: 1.2rem 4rem; }
+    .prices-list li:nth-child(odd) {
+      background-color: #fff; }
+    .prices-list li:nth-child(even) {
+      background-color: #c0e2eb; }
+    .prices-list li b {
+      font-weight: 500; }
+    .prices-list li:last-child {
+      border-radius: 0 0 .7rem .7rem; }
 
 .prices-add-desc {
   font-family: "Raleway", sans-serif;
@@ -1503,5 +1528,31 @@ div.underline {
       font-weight: 300;
       max-width: 90%;
       text-align: center; }
+
+.account-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #022139;
+  border-radius: .7rem; }
+  .account-container .account-image {
+    display: flex;
+    width: 10rem;
+    height: 10rem; }
+    .account-container .account-image img {
+      margin: auto;
+      width: 6rem;
+      height: 6rem; }
+  .account-container .account-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 2rem; }
+    .account-container .account-number .account-number-desc {
+      color: #fff;
+      font-family: "Quicksand", sans-serif;
+      font-weight: 300;
+      font-size: 2.4rem;
+      line-height: 3.6rem; }
 
 /*# sourceMappingURL=main.css.map */

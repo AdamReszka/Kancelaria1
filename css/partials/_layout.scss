@@ -1482,12 +1482,14 @@ div.underline{
   flex-direction: column;
   align-items: center;
   background-color: #eeeeee;
+  padding-bottom: 8rem;
 }
 .price-article{
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 4rem 0;
   &__blue{
     background-color: $hover;
 
@@ -1506,6 +1508,9 @@ div.underline{
   &.white {
     color: #fff;
   }
+  &.top-margin {
+    margin-top: 8rem;
+  }
 }
 .header-desc.subheader {
   font-size: 2rem;
@@ -1513,8 +1518,21 @@ div.underline{
   &.white {
     color: #fff;
   }
+  &.dark-header {
+    background-color: #022139;
+    color: #fff;
+    border-radius: .7rem .7rem 0 0;
+    padding: 1.2rem;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    font-size: 2.4rem;
+  }
+  &.section-margin-bottom {
+    margin-bottom: 8rem;
+  }
 }
 .prices-list {
+  margin-bottom: 4rem;
   li {
     font-family: $way;
     font-size: 2rem;
@@ -1522,7 +1540,20 @@ div.underline{
     color: #282828;
     max-width: 120rem;
     line-height: 3rem;
-    list-style-type: circle;
+    box-sizing: border-box;
+    padding: 1.2rem 4rem;
+    &:nth-child(odd) {
+      background-color: #fff;
+    }
+    &:nth-child(even) {
+      background-color: #c0e2eb;
+    }
+    b{
+      font-weight: 500;
+    }
+    &:last-child{
+      border-radius: 0 0 .7rem .7rem;
+    }
   }
 }
 .prices-add-desc {
@@ -1743,6 +1774,36 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
       font-weight: 300;
       max-width: 90%;
       text-align: center;
+    }
+  }
+}
+.account-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #022139;
+  border-radius: .7rem;
+  .account-image {
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    img {
+      margin: auto;
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+  .account-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 2rem;
+    .account-number-desc {
+      color: #fff;
+      font-family: $quick;
+      font-weight: 300;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
     }
   }
 }
