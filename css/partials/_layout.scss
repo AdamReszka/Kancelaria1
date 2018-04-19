@@ -647,6 +647,19 @@ div.underline{
     }
   }
 }
+@media screen and (max-width: 1360px) {
+  #sec1-main-cont{
+    .title-cont{
+      margin-top: 15vh;
+      .top-title{
+        font-size: 8rem;
+      }
+      .sub-title{
+        font-size: 3.2rem;
+      }
+    }
+  }
+}
 #sec2-work-specify-section{
   width: 100%;
   min-height: 46rem;
@@ -742,6 +755,11 @@ div.underline{
           }
         }
     }
+  }
+}
+@media screen and (max-width: 1420px) {
+  #sec2-work-specify-section .offer-box .ob-item {
+    width: 28.5rem;
   }
 }
 #sec3-about-section{
@@ -1039,6 +1057,15 @@ div.underline{
     }
 
   }
+  @media screen and (max-width: 1530px) {
+    .customers-slider{
+      ul{
+        li{
+          width: 97rem;
+        }
+      }
+    }
+  }
   .move-slider{
     width: 6.4rem;
     height: 6.4rem;
@@ -1275,7 +1302,7 @@ div.underline{
 		display: flex;
 		flex-direction: row;
 		.data-col {
-			width: 37rem;
+			width: 31rem;
       margin-right: 1.6rem;
 			// min-height: 20rem;
       iframe{
@@ -1301,19 +1328,24 @@ div.underline{
 					height: 3.1rem;
 					display: block;
 					margin-right: 1.5rem;
+          width: 2.3rem;
+          margin-bottom: 1.6rem;
 				}
 				.item-iphone {
 					display: block;
 					margin-right: 1.6rem;
-					margin-left: 0.2rem
+					margin-left: 0.2rem;
+          margin-bottom: 1.6rem;
 				}
 				.item-email {
 					display: block;
 					margin: 0 1.3rem 0 0.2rem;
+          margin-bottom: 1.6rem;
 				}
         .item-calendar {
           width: 2.6rem;
           margin-right: 1.4rem;
+          margin-bottom: 1.6rem;
         }
 				.item-news {
 					display: block;
@@ -1409,9 +1441,15 @@ div.underline{
     .d-right{
       width: 24rem;
       margin-right: 0;
+      margin-left: -2rem;
     }
 
 	}
+}
+.data-break-row{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 #sec9-bottom-footer{
   width: 100%;
@@ -1804,6 +1842,170 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
       font-weight: 300;
       font-size: 2.4rem;
       line-height: 3.6rem;
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .header-desc {
+    max-width: 94%;
+  }
+  #sec7-team-section {
+    .team-box{
+      width: 102rem;
+      .tb-photo{
+        width: 42rem;
+      }
+    }
+  }
+  #sec8-top-footer-section {
+    .top-footer-cover{
+      padding-bottom: 0;
+    }
+    .footer-title {
+      width: 94%;
+    }
+    .data-frame {
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      .data-break-row{
+        width: 94%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 16rem;
+      }
+      .d-right {
+        width: 100%;
+        margin-bottom: -2px;
+        margin-left: 0;
+        iframe {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  #sec8-top-footer-section {
+    .data-frame {
+      .data-break-row{
+        padding-left: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1140px) {
+  #sec7-team-section {
+    .team-box{
+      width: 82rem;
+      .tb-desc{
+        width: 40rem;
+      }
+      .tb-photo{
+        width: 42rem;
+      }
+      .tb-right{
+        padding-top: 5rem;
+        padding-left: 5rem;
+      }
+      .tb-left{
+        padding-top: 5rem;
+        padding-right: 5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1060px) {
+  #sec8-top-footer-section {
+    .data-frame {
+      .data-break-row{
+        max-width: 660px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 980px) {
+  #sec7-team-section {
+    .team-box{
+      flex-direction: column;
+      align-items: flex-start;
+      width: 82rem;
+      height: 84rem;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #sec8-top-footer-section {
+    .footer-title{
+      .footer-title-logo{
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+    .data-frame {
+      .data-break-row {
+        flex-direction: column;
+        align-items: center;
+        .data-col {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  #sec9-bottom-footer p.copyrights {
+    left: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #sec8-top-footer-section {
+    .footer-title {
+      .footer-title-first {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 340px) {
+  #sec8-top-footer-section {
+    .data-frame {
+      .data-break-row {
+        .data-col {
+          width: 100%;
+          .lc-title {
+            text-align: center;
+          }
+          .data-row {
+            flex-direction: column;
+            img {
+              margin-left: auto;
+              margin-right: auto;
+            }
+            .adres {
+              width: 100%;
+            }
+            .data-adres, .data-desc {
+              text-align: center;
+              justify-content: center;
+              width: 100%;
+            }
+            .email-cont, .days-of-week{
+              width: 100%;
+              text-align: center;
+            }
+            .bank-accounts{
+              width: 100%;
+            }
+            .data-desc.data-desc-account.info{
+              width: 100%;
+            }
+            .data-desc{
+              .data-week{
+                width: 12rem;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
