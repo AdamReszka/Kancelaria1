@@ -906,7 +906,8 @@ div.underline {
       font-size: 2rem;
       font-weight: 300;
       color: #000;
-      line-height: 2.4rem; }
+      line-height: 2.4rem;
+      width: 94%; }
   #sec5-customers-section .customers-slider {
     height: 40rem;
     margin: 5rem 0 0 0;
