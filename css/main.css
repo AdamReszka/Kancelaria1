@@ -199,7 +199,8 @@ body {
   color: #282828;
   margin: 4rem 0 4rem 0;
   max-width: 120rem;
-  line-height: 3rem; }
+  line-height: 3rem;
+  text-align: center; }
   .header-desc.white {
     color: #fff; }
   .header-desc.small {
@@ -786,7 +787,7 @@ div.underline {
 
 #sec4-numbers {
   width: 100%;
-  height: 20rem;
+  min-height: 20rem;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -1001,10 +1002,11 @@ div.underline {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  overflow: hidden; }
   #sec7-team-section .team-box {
     width: 120rem;
-    height: 42rem;
+    min-height: 42rem;
     margin: 6rem 0;
     display: flex;
     flex-direction: row;
@@ -1026,7 +1028,7 @@ div.underline {
       background-image: url("../images/brooke-cagle-195777.jpg"); }
     #sec7-team-section .team-box .tb-desc {
       width: 60rem;
-      height: 42rem;
+      min-height: 42rem;
       box-sizing: border-box;
       padding-top: 6rem; }
       #sec7-team-section .team-box .tb-desc .tbd-title {
@@ -1583,6 +1585,9 @@ div.underline {
   .header-desc {
     max-width: 94%; }
 
+  #sec5-customers-section .customers-slider ul li {
+    width: 80rem; }
+
   #sec7-team-section .team-box {
     width: 102rem; }
     #sec7-team-section .team-box .tb-photo {
@@ -1607,6 +1612,19 @@ div.underline {
       margin-left: 0; }
       #sec8-top-footer-section .data-frame .d-right iframe {
         width: 100%; } }
+@media screen and (max-width: 1220px) {
+  #sec4-numbers .number-cont {
+    flex-wrap: wrap;
+    justify-content: center; }
+    #sec4-numbers .number-cont .number-item {
+      width: 50%;
+      height: 50%;
+      border: none;
+      display: flex; }
+      #sec4-numbers .number-cont .number-item .item-inside {
+        margin: 1rem auto; }
+      #sec4-numbers .number-cont .number-item:first-child {
+        border: none; } }
 @media screen and (max-width: 1200px) {
   #sec8-top-footer-section .data-frame .data-break-row {
     padding-left: 0; } }
@@ -1623,16 +1641,53 @@ div.underline {
     #sec7-team-section .team-box .tb-left {
       padding-top: 5rem;
       padding-right: 5rem; } }
+@media screen and (max-width: 1100px) {
+  #sec5-customers-section .customers-slider ul li {
+    width: 64rem; } }
 @media screen and (max-width: 1060px) {
   #sec8-top-footer-section .data-frame .data-break-row {
     max-width: 660px; } }
 @media screen and (max-width: 980px) {
+  .header-desc {
+    text-align: center; }
+
+  p.sec-header {
+    text-align: center;
+    width: 94%; }
+
   #sec7-team-section .team-box {
     flex-direction: column;
-    align-items: flex-start;
-    width: 82rem;
-    height: 84rem; } }
+    align-items: center;
+    width: 60rem;
+    min-height: 72rem;
+    margin: 6rem 0 0 0; }
+    #sec7-team-section .team-box .tb-desc {
+      width: 100%;
+      min-height: 36rem; }
+    #sec7-team-section .team-box .tb-left, #sec7-team-section .team-box .tb-right {
+      padding-right: 0;
+      padding-left: 0; }
+    #sec7-team-section .team-box .tb-photo {
+      width: 60rem;
+      display: flex;
+      flex-shrink: 0; }
+    #sec7-team-section .team-box.reverse {
+      flex-direction: column-reverse;
+      margin: 6rem 0; } }
 @media screen and (max-width: 768px) {
+  #sec4-numbers .number-cont {
+    height: 32rem;
+    margin-bottom: 2rem; }
+    #sec4-numbers .number-cont .number-item {
+      width: 100%;
+      height: 25%;
+      border: none;
+      display: flex; }
+      #sec4-numbers .number-cont .number-item .item-inside {
+        margin: 1rem auto; }
+      #sec4-numbers .number-cont .number-item:first-child {
+        border: none; }
+
   #sec8-top-footer-section .footer-title .footer-title-logo {
     width: 8rem;
     height: 8rem; }
@@ -1644,6 +1699,19 @@ div.underline {
 
   #sec9-bottom-footer p.copyrights {
     left: 1rem; } }
+@media screen and (max-width: 720px) {
+  #sec7-team-section .team-box {
+    width: 42rem;
+    min-height: 75rem; }
+    #sec7-team-section .team-box .tb-photo {
+      width: 42rem; } }
+@media screen and (max-width: 500px) {
+  #sec7-team-section .team-box {
+    width: 94%; }
+    #sec7-team-section .team-box .tb-photo {
+      width: 100%; }
+    #sec7-team-section .team-box .tb-desc .tbd-title {
+      width: 100%; } }
 @media screen and (max-width: 480px) {
   #sec8-top-footer-section .footer-title .footer-title-first {
     font-size: 2rem; } }
