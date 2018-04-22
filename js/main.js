@@ -111,9 +111,7 @@ function contactService() {
   setTimeout(function() {
     $('#first-contact-form').addClass('display-flex').addClass('bounceIn');
   }, 3700);
-  $('#first-contact-phone').on(
-    {
-    mouseenter: function() {
+  $('#first-contact-phone').on('click', function() {
       $(this).addClass('hover-phone');
       $(this).closest('.first-contact-box').find('#first-contact-form').removeClass('hover-form');
       if($('.first-contact-info').hasClass('display-flex')) {
@@ -124,17 +122,18 @@ function contactService() {
         }, 500);
       };
       $('.contact-phone-number').fadeIn();
-    },
-    mouseleave: function() {
+    }
+  );
+  $('#first-contact-phone').on('click', function() {
       setTimeout(function(){
         $('#first-contact-phone').removeClass('hover-phone');
         $('.contact-phone-number').fadeOut();
       }, 7000);
     }
-  });
-  $('#first-contact-form').on(
-    {
-    mouseenter: function() {
+  );
+  $('#first-contact-form').on('click', function() {
+    
+
       $(this).closest('.first-contact-box').find('#first-contact-phone').removeClass('hover-phone');
       $('.first-contact-info').removeClass('bounceOut');
       $('.first-contact-info').stop();
@@ -142,8 +141,9 @@ function contactService() {
       $(this).addClass('hover-form');
       $('.first-contact-info').addClass('display-flex');
       $('.first-contact-info').addClass('bounceIn')
-    },
-    mouseleave: function() {
+    }
+  );
+  $('#first-contact-form').on('click', function() {
       setTimeout(function(){
         $('#first-contact-form').removeClass('hover-form');
         if(!$('#first-contact-form').hasClass('hover-form2')){
@@ -151,7 +151,7 @@ function contactService() {
         }
       }, 7000);
     }
-  });
+  );
   $('.first-contact-info').on(
     {
     mouseenter: function() {
