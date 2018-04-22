@@ -848,6 +848,9 @@ div.underline {
   flex-direction: column;
   align-items: center;
   padding-bottom: 6rem; }
+  #sec5-customers-section .questions-mobile-container {
+    display: none;
+    flex-direction: column; }
   #sec5-customers-section .customers-slider {
     height: 40rem;
     margin: 5rem 0 0 0;
@@ -1585,8 +1588,13 @@ div.underline {
   .header-desc {
     max-width: 94%; }
 
+  .questions-container {
+    margin-top: 5rem; }
+
   #sec5-customers-section .customers-slider ul li {
     width: 80rem; }
+    #sec5-customers-section .customers-slider ul li .quote-desc {
+      height: 9rem; }
 
   #sec7-team-section .team-box {
     width: 102rem; }
@@ -1642,8 +1650,10 @@ div.underline {
       padding-top: 5rem;
       padding-right: 5rem; } }
 @media screen and (max-width: 1100px) {
-  #sec5-customers-section .customers-slider ul li {
-    width: 64rem; } }
+  #sec5-customers-section .questions-mobile-container {
+    display: flex; }
+  #sec5-customers-section .customers-slider-box {
+    display: none; } }
 @media screen and (max-width: 1060px) {
   #sec8-top-footer-section .data-frame .data-break-row {
     max-width: 660px; } }

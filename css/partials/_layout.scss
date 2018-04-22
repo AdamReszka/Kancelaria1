@@ -945,6 +945,10 @@ div.underline{
   flex-direction: column;
   align-items: center;
   padding-bottom: 6rem;
+  .questions-mobile-container{
+    display: none;
+    flex-direction: column;
+  }
   .customers-slider{
     height: 40rem;
     margin: 5rem 0 0 0;
@@ -1851,11 +1855,17 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   .header-desc {
     max-width: 94%;
   }
+  .questions-container {
+    margin-top: 5rem;
+  }
   #sec5-customers-section{
     .customers-slider{
       ul{
         li{
           width: 80rem;
+          .quote-desc {
+            height: 9rem;
+          }
         }
       }
     }
@@ -1948,12 +1958,11 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
 }
 @media screen and (max-width: 1100px) {
   #sec5-customers-section{
-    .customers-slider{
-      ul{
-        li{
-          width: 64rem;
-        }
-      }
+    .questions-mobile-container{
+      display: flex;
+    }
+    .customers-slider-box {
+      display: none;
     }
   }
 }
@@ -2001,6 +2010,9 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
       }
     }
   }
+}
+@media screen and (max-width: 860px) {
+
 }
 @media screen and (max-width: 768px) {
   #sec4-numbers {
