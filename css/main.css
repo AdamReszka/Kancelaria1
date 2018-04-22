@@ -850,7 +850,63 @@ div.underline {
   padding-bottom: 6rem; }
   #sec5-customers-section .questions-mobile-container {
     display: none;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
+    #sec5-customers-section .questions-mobile-container.hidden {
+      display: none; }
+    #sec5-customers-section .questions-mobile-container .mobile-single-question {
+      cursor: pointer;
+      font-size: 2rem;
+      font-family: "Raleway", sans-serif;
+      font-size: 2rem;
+      font-weight: 400;
+      color: #282828;
+      transition: 0.2s;
+      width: 94%;
+      line-height: 2.6rem;
+      margin-bottom: 2.6rem;
+      text-decoration: underline; }
+  #sec5-customers-section .mobile-answer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+    #sec5-customers-section .mobile-answer-container.hidden {
+      display: none; }
+    #sec5-customers-section .mobile-answer-container .return-to-q {
+      cursor: pointer;
+      font-size: 2rem;
+      width: 12rem;
+      height: 3.6rem;
+      box-sizing: border-box;
+      border: 1px solid #22AED1;
+      display: flex;
+      background-color: #22AED1;
+      margin: 4rem 0; }
+      #sec5-customers-section .mobile-answer-container .return-to-q p {
+        display: block;
+        position: relative;
+        margin: auto;
+        text-transform: uppercase;
+        font-family: "Varela Round", sans-serif;
+        font-size: 1.6rem;
+        height: 1.6rem;
+        color: #fff; }
+    #sec5-customers-section .mobile-answer-container .mobile-answer-question {
+      font-size: 2rem;
+      font-family: "Raleway", sans-serif;
+      font-size: 2rem;
+      font-weight: 400;
+      color: #282828;
+      width: 94%;
+      line-height: 2.6rem;
+      margin-bottom: 2.6rem; }
+    #sec5-customers-section .mobile-answer-container .mobile-answer-answer {
+      font-family: "Raleway", sans-serif;
+      font-size: 2rem;
+      font-weight: 300;
+      color: #000;
+      line-height: 2.4rem; }
   #sec5-customers-section .customers-slider {
     height: 40rem;
     margin: 5rem 0 0 0;

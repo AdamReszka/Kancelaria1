@@ -948,6 +948,70 @@ div.underline{
   .questions-mobile-container{
     display: none;
     flex-direction: column;
+    align-items: center;
+    &.hidden {
+      display: none;
+    }
+    .mobile-single-question {
+      cursor: pointer;
+      font-size: 2rem;
+      font-family: $way;
+      font-size: 2rem;
+      font-weight: 400;
+      color: #282828;
+      transition: 0.2s;
+      width: 94%;
+      line-height: 2.6rem;
+      margin-bottom: 2.6rem;
+      text-decoration: underline;
+    }
+  }
+  .mobile-answer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    &.hidden {
+      display: none;
+    }
+    .return-to-q {
+      cursor: pointer;
+      font-size: 2rem;
+      width: 12rem;
+      height: 3.6rem;
+      box-sizing: border-box;
+      border: 1px solid $hover;
+      display: flex;
+      background-color: $hover;
+      margin: 4rem 0;
+      p {
+        display: block;
+        position: relative;
+        margin: auto;
+        text-transform: uppercase;
+        font-family: $varela;
+        font-size: 1.6rem;
+        height: 1.6rem;
+        color: #fff;
+      }
+    }
+    .mobile-answer-question {
+      font-size: 2rem;
+      font-family: $way;
+      font-size: 2rem;
+      font-weight: 400;
+      color: #282828;
+      width: 94%;
+      line-height: 2.6rem;
+      margin-bottom: 2.6rem;
+    }
+    .mobile-answer-answer {
+      font-family: $way;
+      font-size: 2rem;
+      font-weight: 300;
+      color: #000;
+      line-height: 2.4rem;
+    }
   }
   .customers-slider{
     height: 40rem;

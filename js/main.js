@@ -14,6 +14,7 @@ function initAll(){
   movingMenu();
   questionBrowser();
   openStickyNav();
+  mobileQuestions();
 }
 
 function setHeight(){
@@ -300,5 +301,22 @@ function openStickyNav() {
     } else {
       $('#main-sticky-nav').removeClass('open');
     }
+  });
+}
+
+function mobileQuestions() {
+  $('.mobile-single-question').each(function() {
+    $(this).on('click', function(event) {
+      event = event || window.event;
+      var mobQuestID = event.currentTarget.id + "-answer";
+      $('#' + mobQuestID).removeClass('hidden');
+      $(this).closest('.questions-mobile-container').addClass('hidden');
+    });
+  });
+  $('.return-to-q').each(function() {
+    $(this).on('click', function() {
+      $(this).closest('.mobile-answer-container').addClass('hidden');
+      $(this).closest('#sec5-customers-section').find('.questions-mobile-container').removeClass('hidden');
+    });
   });
 }
