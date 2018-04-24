@@ -672,10 +672,12 @@ div.underline{
   .offer-box{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 2rem 0 4rem 0;
     .ob-item{
       width: 32rem;
-      height: 26rem;
+      min-height: 26rem;
       margin: 1rem;
       background-color: #fff;
       position: relative;
@@ -717,7 +719,7 @@ div.underline{
           font-weight: 100;
           color: #282828;
           position: relative;
-          margin: 1rem 0;
+          margin: 1rem 0 6rem 0;
           display: flex;
           flex-wrap: wrap;
         }
@@ -1924,6 +1926,18 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   .questions-container {
     margin-top: 5rem;
   }
+  #sec2-work-specify-section {
+    .offer-box {
+      .ob-item {
+        padding: 2rem;
+        width: 27rem;
+        .ob-button{
+          left: 2rem;
+          bottom: 2rem;
+        }
+      }
+    }
+  }
   #sec3-about-section {
     .about-cover {
       .about-box {
@@ -1984,6 +1998,18 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
 }
 @media screen and (max-width: 1220px) {
+  #sec2-work-specify-section {
+    .offer-box{
+      width: 107rem;
+      .ob-item {
+        width: 47%;
+        padding: 2rem;
+        min-height: 22rem;
+      }
+    }
+
+
+  }
   #sec4-numbers {
     .number-cont {
       flex-wrap: wrap;
@@ -2034,8 +2060,14 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
 }
 @media screen and (max-width: 1100px) {
+  #sec2-work-specify-section{
+    .offer-box{
+      width: 98rem;
+    }
+  }
   #sec3-about-section {
     .about-cover {
+      padding-top: 0;
       .about-box {
         width: 94rem;
         .about-photo {
@@ -2070,6 +2102,11 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   p.sec-header{
     text-align: center;
     width: 94%;
+  }
+  #sec2-work-specify-section{
+    .offer-box{
+      width: 77rem;
+    }
   }
   #sec3-about-section {
     .about-cover {
@@ -2111,13 +2148,17 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
     }
   }
 }
-@media screen and (max-width: 860px) {
-
-}
 @media screen and (max-width: 768px) {
+  #sec2-work-specify-section{
+    .offer-box {
+      width: 98.5%;
+      .ob-item {
+        width: 46%;
+      }
+    }
+  }
   #sec3-about-section {
     .about-cover {
-      padding-top: 0;
       .about-box {
         .about-cont {
           width: 90%;
@@ -2156,6 +2197,7 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
         display: flex;
         .item-inside {
           margin: 1rem auto;
+          width: 28rem;
         }
         &:first-child {
           border: none;
@@ -2191,6 +2233,30 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
       min-height: 75rem;
       .tb-photo {
         width: 42rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+  #sec2-work-specify-section{
+    .offer-box {
+      .ob-item {
+        min-height: 1rem;
+        width: 94%;
+        margin: 2rem 0 0 0;
+        align-items: center;
+        .ob-title {
+          text-align: center;
+        }
+        .ob-desc {
+          text-align: center;
+          margin: 1rem 0 2rem 0;
+        }
+        .ob-button {
+          position: relative;
+          bottom: 0;
+          left: 0;
+        }
       }
     }
   }
