@@ -1614,6 +1614,8 @@ div.underline{
   font-size: 2.8rem;
   font-weight: 400;
   margin-top: 4rem;
+  text-align: center;
+  max-width: 94%;
   &.bottom-margin {
     margin-bottom: 4rem;
   }
@@ -1742,7 +1744,7 @@ div.underline{
 }
 .constant-prices-container {
   width: 120rem;
-  height: 52rem;
+  min-height: 52rem;
   display: flex;
   flex-direction: row;
   margin-bottom: 4rem;
@@ -1794,7 +1796,7 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
       }
     }
     .lil-box{
-      height: 12rem;
+      min-height: 11.74rem;
       width: 39rem;
       box-sizing: border-box;
       margin: 1rem 0 0 1rem;
@@ -1804,12 +1806,12 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
     }
     .mid-box{
       width: 39rem;
-      height: 24.5rem;
+      min-height: 24.5rem;
       margin: 1rem 0 0 1rem;
     }
     .big-box{
       width: 38rem;
-      height: 50rem;
+      min-height: 50rem;
       margin: 1rem;
     }
   }
@@ -1821,11 +1823,13 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   flex-wrap: wrap;
   padding-top: 6rem;
   justify-content: center;
+  margin: 0 2rem;
   .rpc-item {
     position: relative;
     width: 28.4rem;
     height: 24rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     margin-bottom: 5rem;
     background-color: #fff;
     border-radius: .7rem;
@@ -1925,6 +1929,15 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
   .questions-container {
     margin-top: 5rem;
+  }
+  #sec1-prices-subsite-section {
+    .prices-list {
+
+      li {
+        max-width: 94%;
+        margin: 0 auto;
+      }
+    }
   }
   #sec2-work-specify-section {
     .offer-box {
@@ -2029,6 +2042,31 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
     }
   }
 }
+@media screen and (max-width: 1210px) {
+  .constant-prices-container {
+    width: 90rem;
+    padding-right: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    .const-col {
+      width: 44rem;
+      &.col3 {
+        width: 88rem;
+      }
+      .lil-box {
+        width: 43rem;
+      }
+      .mid-box {
+        width: 43rem;
+      }
+      .big-box {
+        width: 87rem;
+        margin-top: 0;
+        min-height: 24.5rem;
+      }
+    }
+  }
+}
 @media screen and (max-width: 1200px) {
   #sec8-top-footer-section {
     .data-frame {
@@ -2060,7 +2098,20 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
 }
 @media screen and (max-width: 1100px) {
-  #sec2-work-specify-section{
+  .price-article {
+    .price-tripple-items {
+      flex-wrap: wrap;
+      .price-item {
+        width: 28rem;
+        margin: 0 1rem;
+        align-items: center;
+        .price-item-title {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+  #sec2-work-specify-section {
     .offer-box{
       width: 98rem;
     }
@@ -2077,8 +2128,8 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
       }
     }
   }
-  #sec5-customers-section{
-    .questions-mobile-container{
+  #sec5-customers-section {
+    .questions-mobile-container {
       display: flex;
     }
     .customers-slider-box {
@@ -2144,6 +2195,45 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
       &.reverse {
         flex-direction: column-reverse;
         margin: 6rem 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 921px) {
+  .price-article {
+    .price-tripple-items {
+      max-width: 60rem;
+      .price-item {
+        margin: 1rem;
+      }
+    }
+  }
+  .constant-prices-container {
+    flex-direction: column;
+    width: 60rem;
+    padding-right: 0;
+    .const-col {
+      width: 100%;
+      box-sizing: border-box;
+      padding-right: 1rem;
+      .mid-box:first-child {
+        margin-top: 0;
+      }
+      &.col3 {
+        width: 58rem;
+        margin-top: 1rem;
+      }
+      .lil-box {
+        width: 58rem;
+      }
+      .mid-box {
+        width: 58rem;
+        min-height: 18rem;
+      }
+      .big-box {
+        width: 58rem;
+        margin-top: 0;
+        min-height: 24.5rem;
       }
     }
   }
@@ -2233,6 +2323,40 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
       min-height: 75rem;
       .tb-photo {
         width: 42rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 620px) {
+  .price-article {
+    .price-tripple-items {
+      max-width: 30rem;
+    }
+  }
+  .constant-prices-container {
+    width: 100%;
+    align-items: center;
+    .const-col {
+      padding: 0;
+      width: 100%;
+      align-items: center;
+      &.col3 {
+        width: 100%;
+      }
+      .lil-box {
+        margin: 1rem 0 0 0;
+        width: 94%;
+        &:last-child{
+          margin: 1rem 0;
+        }
+      }
+      .mid-box {
+        margin: 1rem 0 0 0;
+        width: 94%;
+      }
+      .big-box {
+        margin: 0;
+        width: 94%;
       }
     }
   }

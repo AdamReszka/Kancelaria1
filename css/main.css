@@ -1386,7 +1386,9 @@ div.underline {
   font-family: "Quicksand", sans-serif;
   font-size: 2.8rem;
   font-weight: 400;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  text-align: center;
+  max-width: 94%; }
   .section-subheader.bottom-margin {
     margin-bottom: 4rem; }
   .section-subheader.white {
@@ -1497,7 +1499,7 @@ div.underline {
 
 .constant-prices-container {
   width: 120rem;
-  height: 52rem;
+  min-height: 52rem;
   display: flex;
   flex-direction: row;
   margin-bottom: 4rem; }
@@ -1540,7 +1542,7 @@ div.underline {
           font-size: 3.2rem;
           margin-bottom: 0.6rem; }
     .constant-prices-container .const-col .lil-box {
-      height: 12rem;
+      min-height: 11.74rem;
       width: 39rem;
       box-sizing: border-box;
       margin: 1rem 0 0 1rem; }
@@ -1548,11 +1550,11 @@ div.underline {
         margin: 1rem 0 1rem 1rem; }
     .constant-prices-container .const-col .mid-box {
       width: 39rem;
-      height: 24.5rem;
+      min-height: 24.5rem;
       margin: 1rem 0 0 1rem; }
     .constant-prices-container .const-col .big-box {
       width: 38rem;
-      height: 50rem;
+      min-height: 50rem;
       margin: 1rem; }
 
 .relative-prices-container {
@@ -1561,12 +1563,14 @@ div.underline {
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 6rem;
-  justify-content: center; }
+  justify-content: center;
+  margin: 0 2rem; }
   .relative-prices-container .rpc-item {
     position: relative;
     width: 28.4rem;
     height: 24rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     margin-bottom: 5rem;
     background-color: #fff;
     border-radius: .7rem;
@@ -1651,6 +1655,10 @@ div.underline {
   .questions-container {
     margin-top: 5rem; }
 
+  #sec1-prices-subsite-section .prices-list li {
+    max-width: 94%;
+    margin: 0 auto; }
+
   #sec2-work-specify-section .offer-box .ob-item {
     padding: 2rem;
     width: 27rem; }
@@ -1713,6 +1721,24 @@ div.underline {
         margin: 1rem auto; }
       #sec4-numbers .number-cont .number-item:first-child {
         border: none; } }
+@media screen and (max-width: 1210px) {
+  .constant-prices-container {
+    width: 90rem;
+    padding-right: 1rem;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .constant-prices-container .const-col {
+      width: 44rem; }
+      .constant-prices-container .const-col.col3 {
+        width: 88rem; }
+      .constant-prices-container .const-col .lil-box {
+        width: 43rem; }
+      .constant-prices-container .const-col .mid-box {
+        width: 43rem; }
+      .constant-prices-container .const-col .big-box {
+        width: 87rem;
+        margin-top: 0;
+        min-height: 24.5rem; } }
 @media screen and (max-width: 1200px) {
   #sec8-top-footer-section .data-frame .data-break-row {
     padding-left: 0; } }
@@ -1730,6 +1756,15 @@ div.underline {
       padding-top: 5rem;
       padding-right: 5rem; } }
 @media screen and (max-width: 1100px) {
+  .price-article .price-tripple-items {
+    flex-wrap: wrap; }
+    .price-article .price-tripple-items .price-item {
+      width: 28rem;
+      margin: 0 1rem;
+      align-items: center; }
+      .price-article .price-tripple-items .price-item .price-item-title {
+        margin-top: 2rem; }
+
   #sec2-work-specify-section .offer-box {
     width: 98rem; }
 
@@ -1786,6 +1821,34 @@ div.underline {
     #sec7-team-section .team-box.reverse {
       flex-direction: column-reverse;
       margin: 6rem 0; } }
+@media screen and (max-width: 921px) {
+  .price-article .price-tripple-items {
+    max-width: 60rem; }
+    .price-article .price-tripple-items .price-item {
+      margin: 1rem; }
+
+  .constant-prices-container {
+    flex-direction: column;
+    width: 60rem;
+    padding-right: 0; }
+    .constant-prices-container .const-col {
+      width: 100%;
+      box-sizing: border-box;
+      padding-right: 1rem; }
+      .constant-prices-container .const-col .mid-box:first-child {
+        margin-top: 0; }
+      .constant-prices-container .const-col.col3 {
+        width: 58rem;
+        margin-top: 1rem; }
+      .constant-prices-container .const-col .lil-box {
+        width: 58rem; }
+      .constant-prices-container .const-col .mid-box {
+        width: 58rem;
+        min-height: 18rem; }
+      .constant-prices-container .const-col .big-box {
+        width: 58rem;
+        margin-top: 0;
+        min-height: 24.5rem; } }
 @media screen and (max-width: 768px) {
   #sec2-work-specify-section .offer-box {
     width: 98.5%; }
@@ -1839,6 +1902,30 @@ div.underline {
     min-height: 75rem; }
     #sec7-team-section .team-box .tb-photo {
       width: 42rem; } }
+@media screen and (max-width: 620px) {
+  .price-article .price-tripple-items {
+    max-width: 30rem; }
+
+  .constant-prices-container {
+    width: 100%;
+    align-items: center; }
+    .constant-prices-container .const-col {
+      padding: 0;
+      width: 100%;
+      align-items: center; }
+      .constant-prices-container .const-col.col3 {
+        width: 100%; }
+      .constant-prices-container .const-col .lil-box {
+        margin: 1rem 0 0 0;
+        width: 94%; }
+        .constant-prices-container .const-col .lil-box:last-child {
+          margin: 1rem 0; }
+      .constant-prices-container .const-col .mid-box {
+        margin: 1rem 0 0 0;
+        width: 94%; }
+      .constant-prices-container .const-col .big-box {
+        margin: 0;
+        width: 94%; } }
 @media screen and (max-width: 580px) {
   #sec2-work-specify-section .offer-box .ob-item {
     min-height: 1rem;
