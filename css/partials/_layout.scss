@@ -202,7 +202,7 @@ div.underline{
   right: 9rem;
   bottom: 3rem;
   height: 7rem;
-  z-index: 50;
+  z-index: 120;
   display: flex;
   flex-direction: row;
 
@@ -765,12 +765,12 @@ div.underline{
 }
 #sec3-about-section{
   width: 100%;
-  height: 80rem;
+  min-height: 84rem;
   background-image: url('../images/manhattan.jpg');
   background-size: cover;
   .about-cover{
     width: 100%;
-    height: 100%;
+    min-height: 84rem;
     background: linear-gradient(rgba(238, 238, 238, 1), rgba(238, 238, 238, 0.8));
     background: -webkit-linear-gradient(rgba(238, 238, 238, 1), rgba(238, 238, 238, 0.8));
     background: -moz-linear-gradient(rgba(238, 238, 238, 1), rgba(238, 238, 238, 0.8));
@@ -787,12 +787,13 @@ div.underline{
       align-items: center;
       .about-cont{
         width: 70rem;
-        height: 54rem;
+        min-height: 50rem;
         border: 2rem solid #fff;
         position: relative;
         z-index: 100;
         display: flex;
         flex-direction: column;
+        padding-bottom: 3rem;
         .upper-title{
           font-family: $way;
           font-size: 2.4rem;
@@ -1923,8 +1924,19 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   .questions-container {
     margin-top: 5rem;
   }
-  #sec5-customers-section{
-    .customers-slider{
+  #sec3-about-section {
+    .about-cover {
+      .about-box {
+        width: 102rem;
+        .about-photo {
+          height: 50rem;
+          width: 32rem;
+        }
+      }
+    }
+  }
+  #sec5-customers-section {
+    .customers-slider {
       ul{
         li{
           width: 80rem;
@@ -2022,6 +2034,17 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
 }
 @media screen and (max-width: 1100px) {
+  #sec3-about-section {
+    .about-cover {
+      .about-box {
+        width: 94rem;
+        .about-photo {
+          height: 39rem;
+          width: 24rem;
+        }
+      }
+    }
+  }
   #sec5-customers-section{
     .questions-mobile-container{
       display: flex;
@@ -2047,6 +2070,18 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   p.sec-header{
     text-align: center;
     width: 94%;
+  }
+  #sec3-about-section {
+    .about-cover {
+      padding-top: 0;
+      .about-box {
+        width: 100%;
+        justify-content: center;
+        .about-photo {
+          display: none;
+        }
+      }
+    }
   }
   #sec7-team-section {
 
@@ -2080,6 +2115,36 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
 
 }
 @media screen and (max-width: 768px) {
+  #sec3-about-section {
+    .about-cover {
+      padding-top: 0;
+      .about-box {
+        .about-cont {
+          width: 90%;
+          .upper-title {
+            margin: 4rem 2rem 0 2rem;
+          }
+          .upper-motto {
+            margin: 1rem 2rem 0 2rem;
+          }
+          .about-desc {
+            margin: 0;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 2rem 2rem 0 2rem;
+          }
+          .about-point {
+            margin: 2.4rem 2rem 0 2rem;
+            .ap-desc {
+              .ap-desc-content {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   #sec4-numbers {
     .number-cont {
       height: 32rem;
@@ -2130,7 +2195,28 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
     }
   }
 }
+@media screen and (max-width: 560px) {
+  #sec3-about-section {
+    .about-cover {
+      .about-box {
+        .about-cont {
+          border: 1rem solid #fff;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 500px) {
+  #sec3-about-section {
+    .about-cover {
+      .about-box {
+        .about-cont {
+          border: none;
+          width: 100%;
+        }
+      }
+    }
+  }
   #sec7-team-section {
     .team-box {
       width: 94%;
@@ -2150,6 +2236,29 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
     .footer-title {
       .footer-title-first {
         font-size: 2rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  #sec3-about-section {
+    .about-cover {
+      .about-box {
+        .about-cont {
+          border: none;
+          width: 100%;
+          .about-point {
+            flex-direction: column;
+            .ap-desc {
+              margin: 0;
+            }
+            .ap-img {
+              margin-bottom: 2rem;
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
       }
     }
   }

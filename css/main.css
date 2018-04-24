@@ -223,7 +223,7 @@ div.underline {
   right: 9rem;
   bottom: 3rem;
   height: 7rem;
-  z-index: 50;
+  z-index: 120;
   display: flex;
   flex-direction: row; }
   .first-contact-box .fc-coin {
@@ -693,12 +693,12 @@ div.underline {
     width: 28.5rem; } }
 #sec3-about-section {
   width: 100%;
-  height: 80rem;
+  min-height: 84rem;
   background-image: url("../images/manhattan.jpg");
   background-size: cover; }
   #sec3-about-section .about-cover {
     width: 100%;
-    height: 100%;
+    min-height: 84rem;
     background: linear-gradient(#eeeeee, rgba(238, 238, 238, 0.8));
     background: -webkit-linear-gradient(#eeeeee, rgba(238, 238, 238, 0.8));
     background: -moz-linear-gradient(#eeeeee, rgba(238, 238, 238, 0.8));
@@ -715,12 +715,13 @@ div.underline {
       align-items: center; }
       #sec3-about-section .about-cover .about-box .about-cont {
         width: 70rem;
-        height: 54rem;
+        min-height: 50rem;
         border: 2rem solid #fff;
         position: relative;
         z-index: 100;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        padding-bottom: 3rem; }
         #sec3-about-section .about-cover .about-box .about-cont .upper-title {
           font-family: "Raleway", sans-serif;
           font-size: 2.4rem;
@@ -1648,6 +1649,12 @@ div.underline {
   .questions-container {
     margin-top: 5rem; }
 
+  #sec3-about-section .about-cover .about-box {
+    width: 102rem; }
+    #sec3-about-section .about-cover .about-box .about-photo {
+      height: 50rem;
+      width: 32rem; }
+
   #sec5-customers-section .customers-slider ul li {
     width: 80rem; }
     #sec5-customers-section .customers-slider ul li .quote-desc {
@@ -1707,6 +1714,12 @@ div.underline {
       padding-top: 5rem;
       padding-right: 5rem; } }
 @media screen and (max-width: 1100px) {
+  #sec3-about-section .about-cover .about-box {
+    width: 94rem; }
+    #sec3-about-section .about-cover .about-box .about-photo {
+      height: 39rem;
+      width: 24rem; }
+
   #sec5-customers-section .questions-mobile-container {
     display: flex; }
   #sec5-customers-section .customers-slider-box {
@@ -1721,6 +1734,14 @@ div.underline {
   p.sec-header {
     text-align: center;
     width: 94%; }
+
+  #sec3-about-section .about-cover {
+    padding-top: 0; }
+    #sec3-about-section .about-cover .about-box {
+      width: 100%;
+      justify-content: center; }
+      #sec3-about-section .about-cover .about-box .about-photo {
+        display: none; }
 
   #sec7-team-section .team-box {
     flex-direction: column;
@@ -1742,6 +1763,24 @@ div.underline {
       flex-direction: column-reverse;
       margin: 6rem 0; } }
 @media screen and (max-width: 768px) {
+  #sec3-about-section .about-cover {
+    padding-top: 0; }
+    #sec3-about-section .about-cover .about-box .about-cont {
+      width: 90%; }
+      #sec3-about-section .about-cover .about-box .about-cont .upper-title {
+        margin: 4rem 2rem 0 2rem; }
+      #sec3-about-section .about-cover .about-box .about-cont .upper-motto {
+        margin: 1rem 2rem 0 2rem; }
+      #sec3-about-section .about-cover .about-box .about-cont .about-desc {
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2rem 2rem 0 2rem; }
+      #sec3-about-section .about-cover .about-box .about-cont .about-point {
+        margin: 2.4rem 2rem 0 2rem; }
+        #sec3-about-section .about-cover .about-box .about-cont .about-point .ap-desc .ap-desc-content {
+          width: 100%; }
+
   #sec4-numbers .number-cont {
     height: 32rem;
     margin-bottom: 2rem; }
@@ -1772,7 +1811,14 @@ div.underline {
     min-height: 75rem; }
     #sec7-team-section .team-box .tb-photo {
       width: 42rem; } }
+@media screen and (max-width: 560px) {
+  #sec3-about-section .about-cover .about-box .about-cont {
+    border: 1rem solid #fff; } }
 @media screen and (max-width: 500px) {
+  #sec3-about-section .about-cover .about-box .about-cont {
+    border: none;
+    width: 100%; }
+
   #sec7-team-section .team-box {
     width: 94%; }
     #sec7-team-section .team-box .tb-photo {
@@ -1782,6 +1828,18 @@ div.underline {
 @media screen and (max-width: 480px) {
   #sec8-top-footer-section .footer-title .footer-title-first {
     font-size: 2rem; } }
+@media screen and (max-width: 400px) {
+  #sec3-about-section .about-cover .about-box .about-cont {
+    border: none;
+    width: 100%; }
+    #sec3-about-section .about-cover .about-box .about-cont .about-point {
+      flex-direction: column; }
+      #sec3-about-section .about-cover .about-box .about-cont .about-point .ap-desc {
+        margin: 0; }
+      #sec3-about-section .about-cover .about-box .about-cont .about-point .ap-img {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center; } }
 @media screen and (max-width: 340px) {
   #sec8-top-footer-section .data-frame .data-break-row .data-col {
     width: 100%; }
