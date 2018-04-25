@@ -1420,7 +1420,7 @@ div.underline {
     font-weight: 300;
     color: #282828;
     max-width: 120rem;
-    line-height: 3rem;
+    line-height: 2.6rem;
     box-sizing: border-box;
     padding: 1.2rem 4rem; }
     .prices-list li:nth-child(odd) {
@@ -1840,7 +1840,20 @@ div.underline {
       flex-shrink: 0; }
     #sec7-team-section .team-box.reverse {
       flex-direction: column-reverse;
-      margin: 6rem 0; } }
+      margin: 6rem 0; }
+
+  .relative-prices-container {
+    padding-top: 1rem; }
+    .relative-prices-container .rpc-item {
+      height: 18rem; }
+      .relative-prices-container .rpc-item .rpc-item-price {
+        height: 3.6rem;
+        top: 7.2rem; }
+        .relative-prices-container .rpc-item .rpc-item-price p {
+          font-size: 2.4rem; }
+      .relative-prices-container .rpc-item .rpc-borders {
+        height: 8rem;
+        padding-bottom: 1rem; } }
 @media screen and (max-width: 921px) {
   .price-article .price-tripple-items {
     max-width: 60rem; }
