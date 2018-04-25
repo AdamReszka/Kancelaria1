@@ -1928,7 +1928,16 @@ div.underline {
       margin-right: 0; }
 
   #sec9-bottom-footer p.copyrights {
-    left: 1rem; } }
+    left: 1rem; }
+
+  .price-article {
+    padding: 0; }
+
+  .header-desc.subheader.section-margin-bottom {
+    margin-bottom: 4rem; }
+
+  .section-subheader.top-margin {
+    margin-top: 4rem; } }
 @media screen and (max-width: 720px) {
   #sec7-team-section .team-box {
     width: 42rem;
