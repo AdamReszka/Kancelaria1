@@ -859,9 +859,8 @@ div.underline {
       display: none; }
     #sec5-customers-section .questions-mobile-container .mobile-single-question {
       cursor: pointer;
-      font-size: 2rem;
       font-family: "Raleway", sans-serif;
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 400;
       color: #282828;
       transition: 0.2s;
