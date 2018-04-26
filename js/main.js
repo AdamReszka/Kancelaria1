@@ -326,7 +326,7 @@ function faqTrimmer() {
   $('.mobile-single-question').each(function() {
     $(this).on('click', function() {
       $('html, body').animate({
-        scrollTop: $("#questions-header").offset().top
+        scrollTop: $("#questions-header").offset().top + 100
     }, 500);
     });
   });
