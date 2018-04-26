@@ -702,9 +702,9 @@ div.underline {
   #sec3-about-section .about-cover {
     width: 100%;
     min-height: 84rem;
-    background: linear-gradient(#eeeeee, rgba(238, 238, 238, 0.8));
-    background: -webkit-linear-gradient(#eeeeee, rgba(238, 238, 238, 0.8));
-    background: -moz-linear-gradient(#eeeeee, rgba(238, 238, 238, 0.8));
+    background: linear-gradient(#eeeeee, rgba(238, 238, 238, 0.9));
+    background: -webkit-linear-gradient(#eeeeee, rgba(238, 238, 238, 0.9));
+    background: -moz-linear-gradient(#eeeeee, rgba(238, 238, 238, 0.9));
     padding-top: 6rem;
     box-sizing: border-box;
     display: flex;
