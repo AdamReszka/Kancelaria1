@@ -15,6 +15,7 @@ function initAll(){
   questionBrowser();
   openStickyNav();
   mobileQuestions();
+  faqTrimmer();
 }
 
 function setHeight(){
@@ -132,7 +133,7 @@ function contactService() {
     }
   );
   $('#first-contact-form').on('click', function() {
-    
+
 
       $(this).closest('.first-contact-box').find('#first-contact-phone').removeClass('hover-phone');
       $('.first-contact-info').removeClass('bounceOut');
@@ -317,6 +318,16 @@ function mobileQuestions() {
     $(this).on('click', function() {
       $(this).closest('.mobile-answer-container').addClass('hidden');
       $(this).closest('#sec5-customers-section').find('.questions-mobile-container').removeClass('hidden');
+    });
+  });
+}
+
+function faqTrimmer() {
+  $('.mobile-single-question').each(function() {
+    $(this).on('click', function() {
+      $('html, body').animate({
+        scrollTop: $("#questions-header").offset().top
+    }, 500);
     });
   });
 }
