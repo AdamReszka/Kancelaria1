@@ -1267,6 +1267,7 @@ div.underline{
         font-weight: 300;
         color: #282828;
         margin: 2rem 0;
+        line-height: 2.2rem;
       }
       .tbd-subcont{
         font-family: $way;
@@ -2179,6 +2180,8 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
 @media screen and (max-width: 980px) {
   .header-desc {
     text-align: center;
+    line-height: 2.4rem;
+    font-size: 2rem;
   }
   p.sec-header{
     text-align: center;

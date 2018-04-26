@@ -1106,7 +1106,8 @@ div.underline {
         font-size: 1.8rem;
         font-weight: 300;
         color: #282828;
-        margin: 2rem 0; }
+        margin: 2rem 0;
+        line-height: 2.2rem; }
       #sec7-team-section .team-box .tb-desc .tbd-subcont {
         font-family: "Raleway", sans-serif;
         font-size: 1.4rem;
@@ -1806,7 +1807,9 @@ div.underline {
     max-width: 660px; } }
 @media screen and (max-width: 980px) {
   .header-desc {
-    text-align: center; }
+    text-align: center;
+    line-height: 2.4rem;
+    font-size: 2rem; }
 
   p.sec-header {
     text-align: center;
