@@ -995,6 +995,10 @@ div.underline{
         font-size: 1.6rem;
         height: 1.6rem;
         color: #fff;
+        &.back-button{
+          text-decoration: none;
+        }
+
       }
     }
     .mobile-answer-question {

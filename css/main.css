@@ -894,6 +894,8 @@ div.underline {
         font-size: 1.6rem;
         height: 1.6rem;
         color: #fff; }
+        #sec5-customers-section .mobile-answer-container .return-to-q p.back-button {
+          text-decoration: none; }
     #sec5-customers-section .mobile-answer-container .mobile-answer-question {
       font-size: 2rem;
       font-family: "Raleway", sans-serif;
