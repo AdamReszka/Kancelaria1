@@ -2292,6 +2292,9 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
 }
 @media screen and (max-width: 768px) {
+  .first-contact-box {
+    display: none;
+  }
   #sec2-work-specify-section{
     .offer-box {
       width: 98.5%;

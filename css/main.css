@@ -1890,6 +1890,9 @@ div.underline {
         margin-top: 0;
         min-height: 24.5rem; } }
 @media screen and (max-width: 768px) {
+  .first-contact-box {
+    display: none; }
+
   #sec2-work-specify-section .offer-box {
     width: 98.5%; }
     #sec2-work-specify-section .offer-box .ob-item {
