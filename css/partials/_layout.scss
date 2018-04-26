@@ -714,14 +714,15 @@ div.underline{
 
         }
         .ob-desc{
-          font-size: 1.4rem;
-          font-family: $varela;
-          font-weight: 100;
-          color: #282828;
+          font-size: 1.6rem;
+          font-family: $way;
+          font-weight: 400;
+          color: #000;
           position: relative;
           margin: 1rem 0 6rem 0;
           display: flex;
           flex-wrap: wrap;
+          line-height: 2rem;
         }
         .ob-button{
           width: 12rem;
@@ -813,13 +814,14 @@ div.underline{
         .about-desc{
           margin: 2.4rem 0 0 4rem;
           width: 60rem;
-          font-size: 1.4rem;
-          font-family: $varela;
-          font-weight: 100;
-          color: #282828;
+          font-size: 1.6rem;
+          font-family: $way;
+          font-weight: 400;
+          color: #000;
           position: relative;
           display: flex;
           flex-wrap: wrap;
+          line-height: 2rem;
         }
         .about-point{
           display: flex;
@@ -847,15 +849,16 @@ div.underline{
               }
             }
             .ap-desc-content{
-              font-size: 1.4rem;
-              font-family: $varela;
-              font-weight: 100;
-              color: #282828;
+              font-size: 1.6rem;
+              font-family: $way;
+              font-weight: 400;
+              color: #000;
               position: relative;
               margin: 1rem 0;
               display: flex;
               flex-wrap: wrap;
               width: 53rem;
+              line-height: 2rem;
               p{
                 margin: 0;
                 padding: 0;

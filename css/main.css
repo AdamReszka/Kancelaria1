@@ -653,14 +653,15 @@ div.underline {
         font-weight: 700;
         position: relative; }
       #sec2-work-specify-section .offer-box .ob-item .ob-desc {
-        font-size: 1.4rem;
-        font-family: "Varela Round", sans-serif;
-        font-weight: 100;
-        color: #282828;
+        font-size: 1.6rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        color: #000;
         position: relative;
         margin: 1rem 0 6rem 0;
         display: flex;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+        line-height: 2rem; }
       #sec2-work-specify-section .offer-box .ob-item .ob-button {
         width: 12rem;
         height: 3.6rem;
@@ -739,13 +740,14 @@ div.underline {
         #sec3-about-section .about-cover .about-box .about-cont .about-desc {
           margin: 2.4rem 0 0 4rem;
           width: 60rem;
-          font-size: 1.4rem;
-          font-family: "Varela Round", sans-serif;
-          font-weight: 100;
-          color: #282828;
+          font-size: 1.6rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 400;
+          color: #000;
           position: relative;
           display: flex;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+          line-height: 2rem; }
         #sec3-about-section .about-cover .about-box .about-cont .about-point {
           display: flex;
           flex-direction: row;
@@ -768,15 +770,16 @@ div.underline {
                 margin: 0;
                 padding: 0; }
             #sec3-about-section .about-cover .about-box .about-cont .about-point .ap-desc .ap-desc-content {
-              font-size: 1.4rem;
-              font-family: "Varela Round", sans-serif;
-              font-weight: 100;
-              color: #282828;
+              font-size: 1.6rem;
+              font-family: "Raleway", sans-serif;
+              font-weight: 400;
+              color: #000;
               position: relative;
               margin: 1rem 0;
               display: flex;
               flex-wrap: wrap;
-              width: 53rem; }
+              width: 53rem;
+              line-height: 2rem; }
               #sec3-about-section .about-cover .about-box .about-cont .about-point .ap-desc .ap-desc-content p {
                 margin: 0;
                 padding: 0; }
