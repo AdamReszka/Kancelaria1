@@ -1837,8 +1837,10 @@ div.underline {
     text-align: center;
     width: 94%; }
 
-  #sec2-work-specify-section .offer-box {
-    width: 77rem; }
+  #sec2-work-specify-section {
+    padding-top: 2rem; }
+    #sec2-work-specify-section .offer-box {
+      width: 77rem; }
 
   #sec3-about-section .about-cover {
     padding-top: 0; }
