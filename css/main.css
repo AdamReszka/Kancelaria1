@@ -1747,6 +1747,11 @@ div.underline {
       #sec4-numbers .number-cont .number-item:first-child {
         border: none; } }
 @media screen and (max-width: 1210px) {
+  #sec1-main-cont .title-cont {
+    width: 60vw; }
+    #sec1-main-cont .title-cont .top-title {
+      font-size: 7rem; }
+
   .header-desc.small {
     margin: 1rem 0; }
 
@@ -1837,6 +1842,9 @@ div.underline {
     text-align: center;
     width: 94%; }
 
+  #sec1-main-cont .title-cont {
+    margin-top: 12vh; }
+
   #sec2-work-specify-section {
     padding-top: 2rem; }
     #sec2-work-specify-section .offer-box {
@@ -1910,12 +1918,30 @@ div.underline {
         width: 58rem;
         margin-top: 0;
         min-height: 24.5rem; } }
+@media screen and (max-width: 860px) {
+  .main-ul {
+    margin: 0 0 0 1.4rem; }
+
+  .first-contact-box {
+    right: 3rem; }
+
+  #sec1-main-cont .title-cont {
+    width: 70vw;
+    margin: 16vh 0 0 3rem; }
+    #sec1-main-cont .title-cont .top-title {
+      font-size: 7rem; } }
 @media screen and (max-width: 768px) {
   .mobile-phone-banner {
     display: flex; }
 
   .first-contact-box {
     display: none; }
+
+  #sec1-main-cont .title-cont {
+    width: 100%;
+    margin: 16vh 0 0 3rem; }
+    #sec1-main-cont .title-cont .top-title {
+      font-size: 7rem; }
 
   #sec2-work-specify-section .offer-box {
     width: 98.5%; }
@@ -2006,7 +2032,15 @@ div.underline {
         width: 94%; }
       .constant-prices-container .const-col .big-box {
         margin: 0;
-        width: 94%; } }
+        width: 94%; }
+
+  #sec1-main-cont .title-cont {
+    width: 70vw;
+    margin: 16vh 0 0 3rem; }
+    #sec1-main-cont .title-cont .top-title {
+      font-size: 6rem; }
+    #sec1-main-cont .title-cont .sub-title {
+      font-size: 2.6rem; } }
 @media screen and (max-width: 580px) {
   #sec2-work-specify-section .offer-box .ob-item {
     min-height: 1rem;
@@ -2028,6 +2062,13 @@ div.underline {
     flex-direction: column;
     align-items: center; } }
 @media screen and (max-width: 560px) {
+  #sec1-main-cont .title-cont {
+    margin: 10vh 0 0 3rem; }
+    #sec1-main-cont .title-cont .top-title {
+      font-size: 6rem; }
+    #sec1-main-cont .title-cont .sub-title {
+      font-size: 2.6rem; }
+
   #sec3-about-section .about-cover .about-box .about-cont {
     border: 1rem solid #fff; } }
 @media screen and (max-width: 500px) {
@@ -2045,6 +2086,13 @@ div.underline {
   #sec8-top-footer-section .footer-title .footer-title-first {
     font-size: 2rem; } }
 @media screen and (max-width: 420px) {
+  #sec1-main-cont .title-cont {
+    margin: 10vh 0 0 3rem; }
+    #sec1-main-cont .title-cont .top-title {
+      font-size: 5rem; }
+    #sec1-main-cont .title-cont .sub-title {
+      font-size: 2.2rem; }
+
   #sec1-prices-subsite-section {
     padding-bottom: 6rem; }
 
@@ -2069,6 +2117,13 @@ div.underline {
         margin-bottom: 2rem;
         display: flex;
         justify-content: center; } }
+@media screen and (max-width: 350px) {
+  #sec1-main-cont .title-cont {
+    margin: 8vh 0 0 3rem; }
+    #sec1-main-cont .title-cont .top-title {
+      font-size: 4rem; }
+    #sec1-main-cont .title-cont .sub-title {
+      font-size: 2rem; } }
 @media screen and (max-width: 340px) {
   #sec8-top-footer-section .data-frame .data-break-row .data-col {
     width: 100%; }

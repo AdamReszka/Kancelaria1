@@ -2079,6 +2079,14 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
 }
 @media screen and (max-width: 1210px) {
+  #sec1-main-cont {
+    .title-cont {
+      width: 60vw;
+      .top-title {
+        font-size: 7rem;
+      }
+    }
+  }
   .header-desc.small {
     margin: 1rem 0;
   }
@@ -2218,6 +2226,11 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
     text-align: center;
     width: 94%;
   }
+  #sec1-main-cont {
+    .title-cont {
+      margin-top: 12vh;
+    }
+  }
   #sec2-work-specify-section {
     padding-top: 2rem;
     .offer-box{
@@ -2320,12 +2333,38 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
     }
   }
 }
+@media screen and (max-width: 860px) {
+  .main-ul {
+    margin: 0 0 0 1.4rem;
+  }
+  .first-contact-box {
+    right: 3rem;
+  }
+  #sec1-main-cont {
+    .title-cont {
+      width: 70vw;
+      margin: 16vh 0 0 3rem;
+      .top-title {
+        font-size: 7rem;
+      }
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   .mobile-phone-banner {
     display: flex;
   }
   .first-contact-box {
     display: none;
+  }
+  #sec1-main-cont {
+    .title-cont {
+      width: 100%;
+      margin: 16vh 0 0 3rem;
+      .top-title {
+        font-size: 7rem;
+      }
+    }
   }
   #sec2-work-specify-section{
     .offer-box {
@@ -2465,6 +2504,18 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
       }
     }
   }
+  #sec1-main-cont {
+    .title-cont {
+      width: 70vw;
+      margin: 16vh 0 0 3rem;
+      .top-title {
+        font-size: 6rem;
+      }
+      .sub-title {
+        font-size: 2.6rem;
+      }
+    }
+  }
 }
 @media screen and (max-width: 580px) {
   #sec2-work-specify-section{
@@ -2498,6 +2549,17 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
 }
 @media screen and (max-width: 560px) {
+  #sec1-main-cont {
+    .title-cont {
+      margin: 10vh 0 0 3rem;
+      .top-title {
+        font-size: 6rem;
+      }
+      .sub-title {
+        font-size: 2.6rem;
+      }
+    }
+  }
   #sec3-about-section {
     .about-cover {
       .about-box {
@@ -2543,6 +2605,17 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
 }
 @media screen and (max-width: 420px) {
+  #sec1-main-cont {
+    .title-cont {
+      margin: 10vh 0 0 3rem;
+      .top-title {
+        font-size: 5rem;
+      }
+      .sub-title {
+        font-size: 2.2rem;
+      }
+    }
+  }
   #sec1-prices-subsite-section {
     padding-bottom: 6rem;
   }
@@ -2583,6 +2656,19 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
             }
           }
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  #sec1-main-cont {
+    .title-cont {
+      margin: 8vh 0 0 3rem;
+      .top-title {
+        font-size: 4rem;
+      }
+      .sub-title {
+        font-size: 2rem;
       }
     }
   }
