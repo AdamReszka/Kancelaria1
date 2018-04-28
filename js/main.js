@@ -16,6 +16,9 @@ function initAll(){
   openStickyNav();
   mobileQuestions();
   faqTrimmer();
+  $('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+	});
 }
 
 function setHeight(){
