@@ -2248,8 +2248,10 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
       }
     }
   }
-  .mobile-sticky-nav {
-    display: flex;
+  #sec1-main-cont {
+    .mobile-sticky-nav {
+      display: flex;
+    }
   }
   .main-sticky-nav {
     display: none;

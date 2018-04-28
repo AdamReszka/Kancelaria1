@@ -1853,7 +1853,7 @@ div.underline {
   .main-cover nav .main-ul {
     display: none; }
 
-  .mobile-sticky-nav {
+  #sec1-main-cont .mobile-sticky-nav {
     display: flex; }
 
   .main-sticky-nav {
