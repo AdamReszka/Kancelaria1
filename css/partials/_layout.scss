@@ -2613,7 +2613,6 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
 @media screen and (max-width: 560px) {
   #sec1-main-cont {
     .title-cont {
-      margin: 10vh 0 0 3rem;
       .top-title {
         font-size: 6rem;
       }
@@ -2669,7 +2668,7 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
 @media screen and (max-width: 420px) {
   #sec1-main-cont {
     .title-cont {
-      margin: 5vh 0 0 3rem;
+      padding: 5vh 0 0 0;
       .top-title {
         font-size: 4.4rem;
       }

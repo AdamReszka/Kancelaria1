@@ -2109,12 +2109,10 @@ div.underline {
     flex-direction: column;
     align-items: center; } }
 @media screen and (max-width: 560px) {
-  #sec1-main-cont .title-cont {
-    margin: 10vh 0 0 3rem; }
-    #sec1-main-cont .title-cont .top-title {
-      font-size: 6rem; }
-    #sec1-main-cont .title-cont .sub-title {
-      font-size: 2.6rem; }
+  #sec1-main-cont .title-cont .top-title {
+    font-size: 6rem; }
+  #sec1-main-cont .title-cont .sub-title {
+    font-size: 2.6rem; }
 
   #sec3-about-section .about-cover .about-box .about-cont {
     border: 1rem solid #fff; } }
@@ -2134,7 +2132,7 @@ div.underline {
     font-size: 2rem; } }
 @media screen and (max-width: 420px) {
   #sec1-main-cont .title-cont {
-    margin: 5vh 0 0 3rem; }
+    padding: 5vh 0 0 0; }
     #sec1-main-cont .title-cont .top-title {
       font-size: 4.4rem; }
     #sec1-main-cont .title-cont .sub-title {
