@@ -2725,7 +2725,6 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
 @media screen and (max-width: 350px) {
   #sec1-main-cont {
     .title-cont {
-      margin: 5vh 0 0 3rem;
       .top-title {
         font-size: 3.6rem;
       }
@@ -2774,6 +2773,25 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  #sec1-main-cont {
+    .title-cont {
+      .top-title {
+        font-size: 3.2rem;
+      }
+      .sub-title {
+        font-size: 1.8rem;
+        padding-bottom: 2rem;
+      }
+      #sec2-work-specify {
+        width: 20rem;
+        a {
+          width: 20rem;
         }
       }
     }
