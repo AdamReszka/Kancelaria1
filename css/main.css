@@ -1965,7 +1965,8 @@ div.underline {
 
   #sec1-main-cont .title-cont {
     width: 100%;
-    margin: 16vh 0 0 3rem; }
+    padding: 16vh 0 0 3rem;
+    box-sizing: border-box; }
     #sec1-main-cont .title-cont .top-title {
       font-size: 7rem; }
 
