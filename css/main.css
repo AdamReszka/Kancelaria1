@@ -53,6 +53,13 @@ body {
   padding: 0;
   color: #000; }
 
+.mobile-sticky-nav {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 6rem;
+  background-color: #22AED1; }
+
 .main-sticky-nav {
   width: 100%;
   height: 9rem;
@@ -1845,18 +1852,11 @@ div.underline {
   .main-cover nav .main-ul {
     display: none; }
 
+  .mobile-sticky-nav {
+    display: flex; }
+
   .main-sticky-nav {
-    height: 6rem; }
-    .main-sticky-nav .sticky-title {
-      margin: .5rem 0 0 .7rem;
-      font-size: 2.4rem;
-      display: flex;
-      flex-direction: column;
-      line-height: 2.6rem; }
-    .main-sticky-nav .sticky-nav-eagle {
-      display: none; }
-    .main-sticky-nav .main-ul.eagle {
-      display: none; }
+    display: none; }
 
   .header-desc {
     text-align: center;
