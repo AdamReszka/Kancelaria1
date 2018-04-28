@@ -1844,6 +1844,12 @@ div.underline {
 @media screen and (max-width: 980px) {
   .main-sticky-nav {
     height: 6rem; }
+    .main-sticky-nav .sticky-title {
+      margin: .5rem 0 0 .7rem;
+      font-size: 2.4rem;
+      display: flex;
+      flex-direction: column;
+      line-height: 2.6rem; }
     .main-sticky-nav .sticky-nav-eagle {
       display: none; }
     .main-sticky-nav .main-ul.eagle {
