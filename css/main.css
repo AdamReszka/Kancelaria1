@@ -2085,7 +2085,8 @@ div.underline {
   #sec1-main-cont .title-cont {
     width: 100%; }
     #sec1-main-cont .title-cont .top-title {
-      font-size: 6rem; }
+      font-size: 6rem;
+      width: 90%; }
     #sec1-main-cont .title-cont .sub-title {
       font-size: 2.6rem;
       padding-right: 3rem; } }
