@@ -53,7 +53,7 @@ body {
   padding: 0;
   color: #000; }
 
-.mobile-sticky-nav {
+#sec1-main-cont .mobile-sticky-nav {
   display: none;
   position: fixed;
   width: 100%;
