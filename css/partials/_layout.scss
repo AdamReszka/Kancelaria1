@@ -2168,6 +2168,19 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
 }
 @media screen and (max-width: 1100px) {
+  .main-sticky-nav {
+    .sticky-nav-eagle {
+      left: 2rem;
+    }
+    .sticky-title {
+      margin-left: 9rem;
+      font-size: 2.4rem;
+      margin-top: 2rem;
+    }
+    .main-ul.eagle {
+      margin-left: 7rem;
+    }
+  }
   .price-article {
     .price-tripple-items {
       flex-wrap: wrap;
@@ -2217,6 +2230,15 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
 }
 @media screen and (max-width: 980px) {
+  .main-sticky-nav {
+    height: 6rem;
+    .sticky-nav-eagle {
+      display: none;
+    }
+    .main-ul.eagle {
+      display: none;
+    }
+  }
   .header-desc {
     text-align: center;
     line-height: 2.4rem;
