@@ -2230,6 +2230,13 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
 }
 @media screen and (max-width: 980px) {
+  .main-cover {
+    nav {
+      .main-ul {
+        display: none;
+      }
+    }
+  }
   .main-sticky-nav {
     height: 6rem;
     .sticky-title {

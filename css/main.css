@@ -1842,6 +1842,9 @@ div.underline {
   #sec8-top-footer-section .data-frame .data-break-row {
     max-width: 660px; } }
 @media screen and (max-width: 980px) {
+  .main-cover nav .main-ul {
+    display: none; }
+
   .main-sticky-nav {
     height: 6rem; }
     .main-sticky-nav .sticky-title {
