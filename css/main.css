@@ -2112,6 +2112,9 @@ div.underline {
     #sec1-main-cont .title-cont .top-title {
       font-size: 7rem; } }
 @media screen and (max-width: 768px) {
+  #mobile-form-container {
+    padding: 3rem 0 2rem 0; }
+
   #main-form {
     width: 88%; }
     #main-form .form-title {

@@ -2573,6 +2573,9 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
 }
 @media screen and (max-width: 768px) {
+  #mobile-form-container {
+    padding: 3rem 0 2rem 0;
+  }
   #main-form {
     width: 88%;
     .form-title {
