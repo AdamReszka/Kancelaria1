@@ -2117,14 +2117,18 @@ div.underline {
     #main-form .form-title {
       font-weight: 300;
       text-transform: uppercase;
-      font-size: 2.8rem; }
+      font-size: 2.8rem;
+      line-height: 3.2rem; }
     #main-form label {
       font-weight: 300;
       font-size: 1.8rem; }
     #main-form .main-form-input {
-      width: 100%; }
+      width: 100%;
+      height: 3.6rem;
+      font-size: 2.2rem; }
     #main-form #main-question-textarea {
-      width: 100%; }
+      width: 100%;
+      font-size: 2.2rem; }
     #main-form #main-form-submit {
       font-size: 1.6rem;
       height: 3.6rem;
@@ -2371,5 +2375,8 @@ div.underline {
     width: 20rem; }
     #sec1-main-cont .title-cont #sec2-work-specify a {
       width: 20rem; } }
+@media screen and (max-width: 300px) {
+  #main-form-submit {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
