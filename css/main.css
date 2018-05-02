@@ -51,11 +51,64 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #000; }
+  color: #000;
+  overflow-x: hidden; }
 
 #first-tag-phone-section {
   position: relative;
   bottom: 3rem; }
+
+#main-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2.4rem 2.2rem 4rem 2.2rem; }
+  #main-form .form-title {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin: 0 0 2rem 0;
+    width: 100%;
+    text-align: center; }
+  #main-form .main-form-input {
+    width: 49.6rem;
+    height: 4.8rem;
+    margin-bottom: 1rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 2.7rem;
+    font-weight: 400;
+    line-height: 3rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0.3rem; }
+  #main-form label {
+    text-align: left;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 400;
+    line-height: 3rem; }
+  #main-form .button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.2rem; }
+  #main-form #main-form-submit {
+    height: 4.8rem;
+    width: 24rem;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 2.3rem;
+    cursor: pointer;
+    transition: 0.3s; }
+    #main-form #main-form-submit:hover {
+      background-color: #fff;
+      color: #22AED1; }
 
 .mobile-sticky-nav {
   display: none;
@@ -605,62 +658,10 @@ div.underline {
   background-color: #22AED1;
   border-radius: 3.6rem; }
 
-#main-form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 4rem 2.2rem; }
-  #main-form .form-title {
-    color: #fff;
-    font-family: "Raleway", sans-serif;
-    font-size: 4rem;
-    font-weight: 500;
-    margin: 0 0 3rem 0;
-    width: 100%;
-    text-align: center; }
-  #main-form .main-form-input {
-    width: 49.6rem;
-    height: 4.8rem;
-    margin-bottom: 1rem;
-    font-family: "Raleway", sans-serif;
-    font-size: 2.7rem;
-    font-weight: 400;
-    line-height: 3rem;
-    padding-left: 1rem;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 0.3rem; }
-  #main-form label {
-    text-align: left;
-    font-family: "Raleway", sans-serif;
-    color: #fff;
-    font-size: 2.3rem;
-    font-weight: 400;
-    line-height: 3rem; }
-  #main-form .button-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin-top: 1.2rem; }
-  #main-form #main-form-submit {
-    height: 4.8rem;
-    width: 24rem;
-    font-family: "Raleway", sans-serif;
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #fff;
-    font-size: 2.3rem;
-    cursor: pointer;
-    transition: 0.3s; }
-    #main-form #main-form-submit:hover {
-      background-color: #fff;
-      color: #22AED1; }
-
 #main-question-textarea {
   resize: none;
   width: 49.6rem;
-  height: 21rem;
+  height: 16rem;
   font-family: "Raleway", sans-serif;
   font-size: 2.7rem;
   font-weight: 400;
@@ -674,10 +675,11 @@ div.underline {
 .cf-layer-cover {
   width: 100%;
   height: 100%;
-  display: flex; }
+  display: flex;
+  padding-top: 2rem; }
   .cf-layer-cover .contact-form {
     width: 54rem;
-    height: 64rem;
+    height: 55rem;
     margin: auto;
     z-index: 120;
     background-color: #fff;
@@ -1318,6 +1320,15 @@ div.underline {
       left: -3rem; }
     #sec7-team-section .team-box .tb-back-right {
       right: -3rem; }
+
+#mobile-form-container {
+  display: none;
+  width: 100%;
+  min-height: 20rem;
+  background-color: #22AED1;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0 2rem 0; }
 
 #sec8-top-footer-section {
   width: 100%;
@@ -2101,6 +2112,24 @@ div.underline {
     #sec1-main-cont .title-cont .top-title {
       font-size: 7rem; } }
 @media screen and (max-width: 768px) {
+  #main-form {
+    width: 88%; }
+    #main-form .form-title {
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 2.8rem; }
+    #main-form label {
+      font-weight: 300;
+      font-size: 1.8rem; }
+    #main-form .main-form-input {
+      width: 100%; }
+    #main-form #main-question-textarea {
+      width: 100%; }
+    #main-form #main-form-submit {
+      font-size: 1.6rem;
+      height: 3.6rem;
+      width: 26rem; }
+
   .mobile-phone-banner {
     display: flex; }
 
@@ -2153,6 +2182,9 @@ div.underline {
         width: 28rem; }
       #sec4-numbers .number-cont .number-item:first-child {
         border: none; }
+
+  #mobile-form-container {
+    display: flex; }
 
   #sec8-top-footer-section .footer-title .footer-title-logo {
     width: 8rem;

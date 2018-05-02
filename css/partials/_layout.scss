@@ -4,11 +4,69 @@ html{
 body{
   @include zero;
   color: #000;
-
+  overflow-x: hidden;
 }
 #first-tag-phone-section {
   position: relative;
   bottom: 3rem;
+}
+#main-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2.4rem 2.2rem 4rem 2.2rem;
+  .form-title {
+    color: #fff;
+    font-family: $way;
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin: 0 0 2rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  .main-form-input {
+    width: 49.6rem;
+    height: 4.8rem;
+    margin-bottom: 1rem;
+    font-family: $way;
+    font-size: 2.7rem;
+    font-weight: 400;
+    line-height: 3rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0.3rem;
+  }
+  label {
+    text-align: left;
+    font-family: $way;
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 400;
+    line-height: 3rem;
+  }
+  .button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.2rem;
+  }
+  #main-form-submit {
+    height: 4.8rem;
+    width: 24rem;
+    font-family: $way;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 2.3rem;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background-color: #fff;
+      color: $hover;
+    }
+  }
 }
 .mobile-sticky-nav {
   display: none;
@@ -656,68 +714,11 @@ div.underline{
   background-color: $hover;
   border-radius: 3.6rem;
 }
-#main-form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 4rem 2.2rem;
-  .form-title {
-    color: #fff;
-    font-family: $way;
-    font-size: 4rem;
-    font-weight: 500;
-    margin: 0 0 3rem 0;
-    width: 100%;
-    text-align: center;
-  }
-  .main-form-input {
-    width: 49.6rem;
-    height: 4.8rem;
-    margin-bottom: 1rem;
-    font-family: $way;
-    font-size: 2.7rem;
-    font-weight: 400;
-    line-height: 3rem;
-    padding-left: 1rem;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 0.3rem;
-  }
-  label {
-    text-align: left;
-    font-family: $way;
-    color: #fff;
-    font-size: 2.3rem;
-    font-weight: 400;
-    line-height: 3rem;
-  }
-  .button-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin-top: 1.2rem;
-  }
-  #main-form-submit {
-    height: 4.8rem;
-    width: 24rem;
-    font-family: $way;
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #fff;
-    font-size: 2.3rem;
-    cursor: pointer;
-    transition: 0.3s;
-    &:hover {
-      background-color: #fff;
-      color: $hover;
-    }
-  }
-}
+
 #main-question-textarea {
   resize: none;
   width: 49.6rem;
-  height: 21rem;
+  height: 16rem;
   font-family: $way;
   font-size: 2.7rem;
   font-weight: 400;
@@ -732,10 +733,10 @@ div.underline{
   width: 100%;
   height: 100%;
   display: flex;
-
+  padding-top: 2rem;
   .contact-form{
     width: 54rem;
-    height: 64rem;
+    height: 55rem;
     margin: auto;
     z-index: 120;
     background-color: #fff;
@@ -1535,6 +1536,15 @@ div.underline{
       right: -3rem;
     }
   }
+}
+#mobile-form-container {
+  display: none;
+  width: 100%;
+  min-height: 20rem;
+  background-color: $hover;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0 2rem 0;
 }
 #sec8-top-footer-section{
   width: 100%;
@@ -2563,6 +2573,29 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
 }
 @media screen and (max-width: 768px) {
+  #main-form {
+    width: 88%;
+    .form-title {
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 2.8rem;
+    }
+    label {
+      font-weight: 300;
+      font-size: 1.8rem;
+    }
+    .main-form-input {
+      width: 100%;
+    }
+    #main-question-textarea {
+      width: 100%;
+    }
+    #main-form-submit {
+      font-size: 1.6rem;
+      height: 3.6rem;
+      width: 26rem;
+    }
+  }
   .mobile-phone-banner {
     display: flex;
   }
@@ -2641,6 +2674,9 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
         }
       }
     }
+  }
+  #mobile-form-container {
+    display: flex;
   }
   #sec8-top-footer-section {
     .footer-title{
