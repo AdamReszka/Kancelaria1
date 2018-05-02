@@ -2397,6 +2397,9 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
 }
 @media screen and (max-width: 980px) {
+  #sec1-prices-subsite-section {
+    margin-top: 6rem;
+  }
   .main-cover {
     background-image: url('../images/main-background.jpg');
     background-size: cover;

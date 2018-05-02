@@ -1975,6 +1975,9 @@ div.underline {
   #sec8-top-footer-section .data-frame .data-break-row {
     max-width: 660px; } }
 @media screen and (max-width: 980px) {
+  #sec1-prices-subsite-section {
+    margin-top: 6rem; }
+
   .main-cover {
     background-image: url("../images/main-background.jpg");
     background-size: cover;
