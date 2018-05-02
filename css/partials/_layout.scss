@@ -128,6 +128,31 @@ body{
       }
 
     }
+    .mobile-menu-buttons {
+      position: absolute;
+      top: 6rem;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background-color: #fff;
+      overflow: hidden;
+      &.open {
+        height: initial;
+      }
+      a {
+        height: 6rem;
+        display: flex;
+        text-decoration: none;
+        color: $hover;
+        p {
+          margin: auto;
+          text-transform: uppercase;
+          font-family: $way;
+          font-weight: 300;
+          font-size: 2.8rem;
+        }
+      }
+    }
   }
 }
 
