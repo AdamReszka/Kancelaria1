@@ -53,6 +53,10 @@ body {
   padding: 0;
   color: #000; }
 
+#first-tag-phone-section {
+  position: relative;
+  bottom: 3rem; }
+
 .mobile-sticky-nav {
   display: none;
   position: fixed;
@@ -298,7 +302,8 @@ body {
     height: 3.6rem;
     color: #fff;
     border: 0.1rem solid #22AED1;
-    transition: 0.2s; }
+    transition: 0.2s;
+    outline: none; }
     .main-button a:hover {
       background-color: #22AED1; }
     .main-button a p {
@@ -2111,7 +2116,7 @@ div.underline {
       padding-left: 3rem; }
     #sec1-main-cont .title-cont .sub-title {
       padding-left: 3rem; }
-  #sec1-main-cont #sec2-work-specify.add-margin {
+  #sec1-main-cont #first-tag-phone.add-margin {
     margin-left: 3rem; }
 
   #sec2-work-specify-section .offer-box {
