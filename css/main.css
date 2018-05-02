@@ -169,7 +169,9 @@ body {
       height: 5rem;
       display: flex;
       text-decoration: none;
-      color: #22AED1; }
+      color: #22AED1;
+      border: none;
+      outline: none; }
       #sec1-main-cont .mobile-sticky-nav .mobile-menu-buttons a p {
         margin: auto;
         text-transform: uppercase;

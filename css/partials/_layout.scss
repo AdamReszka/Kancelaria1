@@ -150,6 +150,8 @@ body{
         display: flex;
         text-decoration: none;
         color: $hover;
+        border: none;
+        outline: none;
         p {
           margin: auto;
           text-transform: uppercase;
