@@ -198,6 +198,9 @@ left: 50%;
     height: 0;
     background-color: #fff;
     overflow: hidden;
+    -webkit-box-shadow: 1px 12px 15px -11px rgba(0,0,0,0.51);
+    -moz-box-shadow: 1px 12px 15px -11px rgba(0,0,0,0.51);
+    box-shadow: 1px 12px 15px -11px rgba(0,0,0,0.51);
     &.open {
       height: initial;
     }
