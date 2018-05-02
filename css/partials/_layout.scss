@@ -139,6 +139,12 @@ body{
       &.open {
         height: initial;
       }
+      li {
+        box-sizing: border-box;
+        &:not(:last-child) {
+          border-bottom: 1px solid #efefef;
+        }
+      }
       a {
         height: 6rem;
         display: flex;
@@ -149,7 +155,7 @@ body{
           text-transform: uppercase;
           font-family: $way;
           font-weight: 300;
-          font-size: 2.8rem;
+          font-size: 2.6rem;
         }
       }
     }
