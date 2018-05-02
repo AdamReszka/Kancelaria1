@@ -98,7 +98,7 @@ body {
       right: 0;
       top: 0; }
       #sec1-main-cont .mobile-sticky-nav .mnc-cover #main-burger-icon #nav-icon3 {
-        width: 40px;
+        width: 36px;
         height: 40px;
         position: relative;
         margin: 1.5rem 1.2rem 0 .8rem;
@@ -130,9 +130,9 @@ body {
       #sec1-main-cont .mobile-sticky-nav .mnc-cover #main-burger-icon #nav-icon3 span:nth-child(1) {
         top: 0px; }
       #sec1-main-cont .mobile-sticky-nav .mnc-cover #main-burger-icon #nav-icon3 span:nth-child(2), #sec1-main-cont .mobile-sticky-nav .mnc-cover #main-burger-icon #nav-icon3 span:nth-child(3) {
-        top: 13px; }
+        top: 14px; }
       #sec1-main-cont .mobile-sticky-nav .mnc-cover #main-burger-icon #nav-icon3 span:nth-child(4) {
-        top: 27px; }
+        top: 28px; }
       #sec1-main-cont .mobile-sticky-nav .mnc-cover #main-burger-icon #nav-icon3.open span:nth-child(1) {
         top: 18px;
         width: 0%;
