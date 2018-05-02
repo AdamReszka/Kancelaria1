@@ -337,7 +337,7 @@ function faqTrimmer() {
 }
 
 function burgerMenu() {
-  $('#main-burger-icon').on('click', function() {
+  $('#nav-icon3').on('click', function() {
     if($('.mobile-menu-buttons').hasClass('open')){
       $('.mobile-menu-buttons').removeClass('open');
     } else {
