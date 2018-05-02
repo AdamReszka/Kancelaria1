@@ -353,6 +353,6 @@ function burgerMenu() {
 function closeBurger() {
   $(window).scroll(function() {
     $('.mobile-menu-buttons').removeClass('open');
-    $('nav-icon3').removeClass('open');
+    $('#nav-icon3').removeClass('open');
   });
 }
