@@ -142,7 +142,7 @@ body{
       li {
         box-sizing: border-box;
         &:not(:last-child) {
-          border-bottom: 1px solid #efefef;
+          border-bottom: 1px solid #f1f1f1;
         }
       }
       a {
@@ -155,7 +155,7 @@ body{
           text-transform: uppercase;
           font-family: $way;
           font-weight: 300;
-          font-size: 2.6rem;
+          font-size: 2.4rem;
         }
       }
     }
