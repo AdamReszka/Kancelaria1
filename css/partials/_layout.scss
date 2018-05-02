@@ -152,6 +152,7 @@ body{
         color: $hover;
         border: none;
         outline: none;
+        cursor: pointer;
         p {
           margin: auto;
           text-transform: uppercase;
@@ -2568,7 +2569,7 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
         padding-left: 3rem;
       }
     }
-    #sec2-work-specify {
+    #sec2-work-specify.add-margin {
       margin-left: 3rem;
     }
   }

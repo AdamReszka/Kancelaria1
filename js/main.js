@@ -17,6 +17,7 @@ function initAll(){
   mobileQuestions();
   faqTrimmer();
   burgerMenu();
+  closeBurger();
   $('#nav-icon3').click(function(){
 		$(this).toggleClass('open');
 	});
@@ -279,7 +280,11 @@ function movingMenu(){
 
 		jQuery("html,body").animate({
 			scrollTop: jQuery("#" + sectionID).offset().top
-		}, 1000)
+		}, 1000);
+    if($('.mobile-menu-buttons').hasClass('open')) {
+      $('.mobile-menu-buttons').removeClass('open');
+      $('#nav-icon3').removeClass('open');
+    }
 	});
 }
 
@@ -343,5 +348,11 @@ function burgerMenu() {
     } else {
       $('.mobile-menu-buttons').addClass('open');
     }
+  });
+}
+function closeBurger() {
+  $(window).scroll(function() {
+    $('.mobile-menu-buttons').removeClass('open');
+    $('nav-icon3').removeClass('open');
   });
 }

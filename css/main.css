@@ -171,7 +171,8 @@ body {
       text-decoration: none;
       color: #22AED1;
       border: none;
-      outline: none; }
+      outline: none;
+      cursor: pointer; }
       #sec1-main-cont .mobile-sticky-nav .mobile-menu-buttons a p {
         margin: auto;
         text-transform: uppercase;
@@ -2102,7 +2103,7 @@ div.underline {
       padding-left: 3rem; }
     #sec1-main-cont .title-cont .sub-title {
       padding-left: 3rem; }
-  #sec1-main-cont #sec2-work-specify {
+  #sec1-main-cont #sec2-work-specify.add-margin {
     margin-left: 3rem; }
 
   #sec2-work-specify-section .offer-box {
