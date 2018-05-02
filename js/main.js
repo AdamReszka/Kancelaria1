@@ -279,7 +279,7 @@ function movingMenu(){
 		var sectionID = event.currentTarget.id + "-section";
 
 		jQuery("html,body").animate({
-			scrollTop: jQuery("#" + sectionID).offset().top
+			scrollTop: jQuery("#" + sectionID).offset().top - 30
 		}, 1000);
     if($('.mobile-menu-buttons').hasClass('open')) {
       $('.mobile-menu-buttons').removeClass('open');
