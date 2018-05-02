@@ -142,11 +142,11 @@ body{
       li {
         box-sizing: border-box;
         &:not(:last-child) {
-          border-bottom: 1px solid #f1f1f1;
+          border-bottom: 1px solid #f5f5f5;
         }
       }
       a {
-        height: 6rem;
+        height: 5rem;
         display: flex;
         text-decoration: none;
         color: $hover;
