@@ -787,6 +787,8 @@ div.underline {
     flex-wrap: wrap;
     justify-content: center;
     padding: 2rem 0 4rem 0; }
+    #sec2-work-specify-section .offer-box.subsite {
+      padding-top: 4rem; }
     #sec2-work-specify-section .offer-box .ob-item {
       width: 32rem;
       min-height: 26rem;
@@ -802,6 +804,10 @@ div.underline {
       -webkit-box-shadow: 1px 12px 15px -11px rgba(0, 0, 0, 0.51);
       -moz-box-shadow: 1px 12px 15px -11px rgba(0, 0, 0, 0.51);
       box-shadow: 1px 12px 15px -11px rgba(0, 0, 0, 0.51); }
+      #sec2-work-specify-section .offer-box .ob-item.subsite {
+        min-height: 4rem;
+        padding: 3rem 3rem 2rem;
+        cursor: pointer; }
       #sec2-work-specify-section .offer-box .ob-item div.underline {
         display: block;
         text-align: center;
@@ -891,18 +897,12 @@ div.underline {
         display: flex;
         flex-direction: column;
         padding-bottom: 3rem; }
-        #sec3-about-section .about-cover .about-box .about-cont .upper-title {
-          font-family: "Raleway", sans-serif;
-          font-size: 2.4rem;
-          font-weight: 300;
-          color: #282828;
-          margin: 4rem 0 0 4rem; }
         #sec3-about-section .about-cover .about-box .about-cont .upper-motto {
           font-family: "Raleway", sans-serif;
           font-weight: 700;
           font-size: 4rem;
           text-transform: uppercase;
-          margin: 1rem 0 0 4rem; }
+          margin: 2.4rem 0 0 4rem; }
         #sec3-about-section .about-cover .about-box .about-cont .about-desc {
           margin: 2.4rem 0 0 4rem;
           width: 60rem;
@@ -970,47 +970,17 @@ div.underline {
   #sec4-numbers .number-cont {
     padding: 0;
     margin: 0 auto;
-    height: 20rem;
-    display: flex;
-    flex-direction: row; }
-    #sec4-numbers .number-cont .number-item {
-      display: flex;
-      height: 20rem;
-      margin: 0;
-      width: 30rem;
-      border-right: 1px solid #e7e7e7; }
-      #sec4-numbers .number-cont .number-item:first-child {
-        border-left: 1px solid #e7e7e7; }
-      #sec4-numbers .number-cont .number-item .item-inside {
-        margin: 6rem 0 6rem 1.2rem;
-        width: 30rem;
-        padding-top: 0.4rem;
-        display: flex;
-        flex-direction: row;
-        font-family: "Raleway", sans-serif;
-        color: #fff; }
-        #sec4-numbers .number-cont .number-item .item-inside .big-num {
-          font-family: "Raleway", sans-serif;
-          font-size: 6rem;
-          font-weight: 600;
-          width: 8rem;
-          text-align: center;
-          color: #22AED1; }
-        #sec4-numbers .number-cont .number-item .item-inside .inside-desc {
-          display: flex;
-          flex-direction: column; }
-          #sec4-numbers .number-cont .number-item .item-inside .inside-desc .inside-desc-title {
-            text-transform: uppercase;
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin: 1.5rem 1rem 1rem 1rem;
-            color: #000; }
-          #sec4-numbers .number-cont .number-item .item-inside .inside-desc .inside-desc-sub {
-            font-size: 1.4rem;
-            font-family: "Varela Round", sans-serif;
-            font-weight: 100;
-            color: #282828;
-            margin: 0 1.2rem; }
+    min-height: 20rem;
+    display: flex; }
+    #sec4-numbers .number-cont .additional-sentence {
+      color: #22AED1;
+      font-size: 2.4rem;
+      font-family: "Raleway", sans-serif;
+      font-weight: 500;
+      text-align: center;
+      max-width: 120rem;
+      margin: auto;
+      padding: 2rem; }
 
 #sec5-customers-section {
   width: 100%;
@@ -1327,6 +1297,20 @@ div.underline {
       left: -3rem; }
     #sec7-team-section .team-box .tb-back-right {
       right: -3rem; }
+
+.theme-subsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+  .theme-subsection:last-child {
+    margin-bottom: 6rem; }
+  .theme-subsection .subsection-list {
+    width: 120rem;
+    margin-left: 2rem;
+    margin-right: 2rem; }
+    .theme-subsection .subsection-list p, .theme-subsection .subsection-list ol, .theme-subsection .subsection-list li {
+      width: 100%; }
 
 #mobile-form-container {
   display: none;
@@ -1882,27 +1866,17 @@ div.underline {
       margin-bottom: -2px;
       margin-left: 0; }
       #sec8-top-footer-section .data-frame .d-right iframe {
-        width: 100%; } }
+        width: 100%; }
+
+  .theme-subsection .subsection-list {
+    width: 100%; } }
 @media screen and (max-width: 1220px) {
   #sec2-work-specify-section .offer-box {
     width: 107rem; }
     #sec2-work-specify-section .offer-box .ob-item {
       width: 47%;
       padding: 2rem;
-      min-height: 22rem; }
-
-  #sec4-numbers .number-cont {
-    flex-wrap: wrap;
-    justify-content: center; }
-    #sec4-numbers .number-cont .number-item {
-      width: 50%;
-      height: 50%;
-      border: none;
-      display: flex; }
-      #sec4-numbers .number-cont .number-item .item-inside {
-        margin: 1rem auto; }
-      #sec4-numbers .number-cont .number-item:first-child {
-        border: none; } }
+      min-height: 22rem; } }
 @media screen and (max-width: 1210px) {
   #sec1-main-cont .title-cont {
     width: 60vw; }
@@ -2003,7 +1977,7 @@ div.underline {
   .main-cover {
     background-image: url("../images/warsaw-bg-1920.jpg");
     background-size: cover;
-    background-position-x: center; }
+    background-position-x: center top; }
     .main-cover::before {
       content: "";
       position: absolute;
@@ -2164,6 +2138,10 @@ div.underline {
     width: 98.5%; }
     #sec2-work-specify-section .offer-box .ob-item {
       width: 46%; }
+      #sec2-work-specify-section .offer-box .ob-item.subsite {
+        padding: 2rem 3rem; }
+        #sec2-work-specify-section .offer-box .ob-item.subsite div.underline {
+          display: none; }
 
   #sec3-about-section .about-cover .about-box .about-cont {
     width: 90%; }
@@ -2181,19 +2159,10 @@ div.underline {
       #sec3-about-section .about-cover .about-box .about-cont .about-point .ap-desc .ap-desc-content {
         width: 100%; }
 
-  #sec4-numbers .number-cont {
-    height: 32rem;
-    margin-bottom: 2rem; }
-    #sec4-numbers .number-cont .number-item {
-      width: 100%;
-      height: 25%;
-      border: none;
-      display: flex; }
-      #sec4-numbers .number-cont .number-item .item-inside {
-        margin: 1rem auto;
-        width: 28rem; }
-      #sec4-numbers .number-cont .number-item:first-child {
-        border: none; }
+  #sec4-numbers .number-cont .additional-sentence {
+    font-size: 1.6rem;
+    text-align: left;
+    line-height: 2rem; }
 
   #mobile-form-container {
     display: flex; }

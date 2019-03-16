@@ -5,7 +5,6 @@ function initAll(){
   var timer1 = 0;
 
   setHeight();
-  setNumbers();
   startSlider();
   startParallax();
   contactService();
@@ -25,19 +24,6 @@ function initAll(){
 
 function setHeight(){
   $('#sec1-main-cont').height($(window).innerHeight());
-}
-
-function setNumbers() {
-
-  var eventFired = false;
-  objectPositionTop = $('#numbersPosition').offset().top - $(window).height();
-  $(window).on('scroll', function() {
-    var currentPosition = $(document).scrollTop();
-    if (currentPosition > objectPositionTop && eventFired === false) {
-      eventFired = true;
-      $('.timer').countTo();
-    }
-  });
 }
 
 function startParallax(){
@@ -266,11 +252,6 @@ function goToFAQ(){
       }
     }
   });
-  $(document).keypress(function(e) {
-    if(e.which == 27) {
-      alert('ok');
-    }
-  });
 }
 
 function movingMenu(){
@@ -279,7 +260,7 @@ function movingMenu(){
 		var sectionID = event.currentTarget.id + "-section";
 
 		jQuery("html,body").animate({
-			scrollTop: jQuery("#" + sectionID).offset().top - 30
+			scrollTop: jQuery("#" + sectionID).offset().top - 80
 		}, 1000);
     if($('.mobile-menu-buttons').hasClass('open')) {
       $('.mobile-menu-buttons').removeClass('open');
