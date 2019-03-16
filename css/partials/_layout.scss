@@ -228,9 +228,6 @@ left: 50%;
     }
   }
 }
-#sec1-main-cont {
-
-}
 
 .main-sticky-nav {
   width: 100%;
@@ -314,13 +311,14 @@ left: 50%;
 #sec1-main-cont{
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
-  background-image: url('../images/main-background.jpg');
+  background-image: url('../images/warsaw-bg-1920.jpg');
   background-size: cover;
+  background-position-x: center;
   position: relative;
   .main-cover{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.65);
     position: relative;
   }
   nav{
@@ -335,25 +333,28 @@ left: 50%;
   .title-cont{
     width: 46vw;
     height: 40rem;
-    margin: 22vh 0 0 8rem;
+    margin: 20vh 0 0 8rem;
     position: relative;
     z-index: 2;
     .top-title{
       font-family: $way;
-      font-size: 9rem;
+      font-size: 7rem;
       text-transform: uppercase;
       font-weight: 800;
       color: #fff;
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 2rem;
+      padding-right: 20px;
+      box-sizing: border-box;
     }
     .sub-title{
       font-family: $way;
       font-size: 3.6rem;
-      font-weight: 300;
+      font-weight: 400;
       color: #dedede;
       margin-bottom: 3.6rem;
+      text-transform: uppercase;
     }
   }
 }
@@ -829,7 +830,7 @@ div.underline{
     .title-cont{
       margin-top: 15vh;
       .top-title{
-        font-size: 8rem;
+        font-size: 6rem;
       }
       .sub-title{
         font-size: 3.2rem;
@@ -1325,20 +1326,7 @@ div.underline{
           }
         }
       }
-      // #slide1{
-      //   background-color: yellow;
-      // }
-      // #slide2{
-      //   background-color: black;
-      // }
-      // #slide3{
-      //   background-color: red;
-      // }
-      // #slide4{
-      //   background-color: violet;
-      // }
     }
-
   }
   @media screen and (max-width: 1530px) {
     .customers-slider{
@@ -2001,8 +1989,8 @@ div.underline{
       &:hover {
         z-index: 50;
         -webkit-box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
-box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
+        box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
       }
       p{
         max-width: 90%;
@@ -2268,9 +2256,6 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   #sec1-main-cont {
     .title-cont {
       width: 60vw;
-      .top-title {
-        font-size: 7rem;
-      }
     }
   }
   .header-desc.small {
@@ -2420,15 +2405,15 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
     margin-top: 6rem;
   }
   .main-cover {
-    background-image: url('../images/main-background.jpg');
+    background-image: url('../images/warsaw-bg-1920.jpg');
     background-size: cover;
-    background-position: right 6rem;
+    background-position-x: center top;
     &::before {
       content: "";
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: rgba(0,0,0,0.4);
+      background-color: rgba(0,0,0,0.65);
     }
     nav {
       .main-ul {
@@ -2869,6 +2854,17 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
 }
 @media screen and (max-width: 480px) {
+  #sec1-main-cont {
+    .title-cont {
+      padding: 5vh 0 0 0;
+      .top-title {
+        font-size: 4.2rem;
+      }
+      .sub-title {
+        font-size: 2.2rem;
+      }
+    }
+  }
   #sec8-top-footer-section {
     .footer-title {
       .footer-title-first {
@@ -2878,17 +2874,6 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
   }
 }
 @media screen and (max-width: 420px) {
-  #sec1-main-cont {
-    .title-cont {
-      padding: 5vh 0 0 0;
-      .top-title {
-        font-size: 4.4rem;
-      }
-      .sub-title {
-        font-size: 2.2rem;
-      }
-    }
-  }
   #sec1-prices-subsite-section {
     padding-bottom: 6rem;
   }
@@ -2933,14 +2918,11 @@ box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75);
     }
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
   #sec1-main-cont {
     .title-cont {
       .top-title {
         font-size: 3.6rem;
-      }
-      .sub-title {
-        font-size: 2rem;
       }
     }
   }

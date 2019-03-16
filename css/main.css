@@ -311,13 +311,14 @@ body {
 #sec1-main-cont {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
-  background-image: url("../images/main-background.jpg");
+  background-image: url("../images/warsaw-bg-1920.jpg");
   background-size: cover;
+  background-position-x: center;
   position: relative; }
   #sec1-main-cont .main-cover {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.65);
     position: relative; }
   #sec1-main-cont nav {
     width: 100%;
@@ -329,24 +330,27 @@ body {
   #sec1-main-cont .title-cont {
     width: 46vw;
     height: 40rem;
-    margin: 22vh 0 0 8rem;
+    margin: 20vh 0 0 8rem;
     position: relative;
     z-index: 2; }
     #sec1-main-cont .title-cont .top-title {
       font-family: "Raleway", sans-serif;
-      font-size: 9rem;
+      font-size: 7rem;
       text-transform: uppercase;
       font-weight: 800;
       color: #fff;
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      padding-right: 20px;
+      box-sizing: border-box; }
     #sec1-main-cont .title-cont .sub-title {
       font-family: "Raleway", sans-serif;
       font-size: 3.6rem;
-      font-weight: 300;
+      font-weight: 400;
       color: #dedede;
-      margin-bottom: 3.6rem; }
+      margin-bottom: 3.6rem;
+      text-transform: uppercase; }
 
 .main-button {
   width: 24rem;
@@ -747,7 +751,7 @@ div.underline {
   #sec1-main-cont .title-cont {
     margin-top: 15vh; }
     #sec1-main-cont .title-cont .top-title {
-      font-size: 8rem; }
+      font-size: 6rem; }
     #sec1-main-cont .title-cont .sub-title {
       font-size: 3.2rem; } }
 .mobile-phone-banner {
@@ -1902,8 +1906,6 @@ div.underline {
 @media screen and (max-width: 1210px) {
   #sec1-main-cont .title-cont {
     width: 60vw; }
-    #sec1-main-cont .title-cont .top-title {
-      font-size: 7rem; }
 
   .header-desc.small {
     margin: 1rem 0; }
@@ -1999,15 +2001,15 @@ div.underline {
     margin-top: 6rem; }
 
   .main-cover {
-    background-image: url("../images/main-background.jpg");
+    background-image: url("../images/warsaw-bg-1920.jpg");
     background-size: cover;
-    background-position: right 6rem; }
+    background-position-x: center; }
     .main-cover::before {
       content: "";
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.4); }
+      background-color: rgba(0, 0, 0, 0.65); }
     .main-cover nav .main-ul {
       display: none; }
 
@@ -2307,16 +2309,16 @@ div.underline {
     #sec7-team-section .team-box .tb-desc .tbd-title {
       width: 100%; } }
 @media screen and (max-width: 480px) {
-  #sec8-top-footer-section .footer-title .footer-title-first {
-    font-size: 2rem; } }
-@media screen and (max-width: 420px) {
   #sec1-main-cont .title-cont {
     padding: 5vh 0 0 0; }
     #sec1-main-cont .title-cont .top-title {
-      font-size: 4.4rem; }
+      font-size: 4.2rem; }
     #sec1-main-cont .title-cont .sub-title {
       font-size: 2.2rem; }
 
+  #sec8-top-footer-section .footer-title .footer-title-first {
+    font-size: 2rem; } }
+@media screen and (max-width: 420px) {
   #sec1-prices-subsite-section {
     padding-bottom: 6rem; }
 
@@ -2341,11 +2343,9 @@ div.underline {
         margin-bottom: 2rem;
         display: flex;
         justify-content: center; } }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
   #sec1-main-cont .title-cont .top-title {
-    font-size: 3.6rem; }
-  #sec1-main-cont .title-cont .sub-title {
-    font-size: 2rem; } }
+    font-size: 3.6rem; } }
 @media screen and (max-width: 340px) {
   #sec8-top-footer-section .data-frame .data-break-row .data-col {
     width: 100%; }
