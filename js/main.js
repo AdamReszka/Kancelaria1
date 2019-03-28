@@ -104,6 +104,7 @@ function contactService() {
     $('#first-contact-form').addClass('display-flex').addClass('bounceIn');
   }, 3700);
   $('#first-contact-phone').on('click', function() {
+    if(!$(this).hasClass('hover-phone')) {
       $(this).addClass('hover-phone');
       $(this).closest('.first-contact-box').find('#first-contact-form').removeClass('hover-form');
       if($('.first-contact-info').hasClass('display-flex')) {
@@ -114,6 +115,10 @@ function contactService() {
         }, 500);
       };
       $('.contact-phone-number').fadeIn();
+    } else {
+      $(this).removeClass('hover-phone');
+    }
+      
     }
   );
   $('#first-contact-phone').on('click', function() {
